@@ -1,3 +1,5 @@
+This experiment compares the impact of setting `synchronous_commit=off` in PostgreSQL. With synchronous_commit=off, PostgreSQL will not wait until the disk is ready after each query. This *does not* cause danger of data corruption, but it does mean if the server crashes, a bit of committed transactions can be rolled back (usually 1 second max). See [the postgresql docs](https://www.postgresql.org/docs/current/wal-async-commit.html) for more info.
+
 <div><table>
 <thead><tr><th>Benchmark</th><th>Experiment</th><th>Activity Count</th><th>Total Duration</th><th>Database Exec Time</th><th>Database Query Count</th></tr></thead>
 <tbody><tr><td>Import-Reddit-Dump-v1</td><td>pg-asynchronous-commit</td><td>99956</td><td>95.7 s</td><td>124 min 54 s</td><td>3855894</td>
