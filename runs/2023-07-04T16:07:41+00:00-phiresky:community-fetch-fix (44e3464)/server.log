@@ -1,0 +1,404 @@
+federation enabled, host is lemmy-alpha
+Starting http server at 0.0.0.0:8536
+[2m2023-07-04T16:07:55.723216Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=cb41b906-77ab-4952-8414-dc50a44bcee1
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=cb41b906-77ab-4952-8414-dc50a44bcee1", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:07:57.410039Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=62ca7e76-7b7b-46c4-bc34-d19296ece7d9
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=62ca7e76-7b7b-46c4-bc34-d19296ece7d9", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:07:57.414136Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=b5153e9d-69ef-4c8e-b10a-f36316597efe
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=b5153e9d-69ef-4c8e-b10a-f36316597efe", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:07:57.798391Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a2a56636-f2bf-469f-9162-75b18cf0a849
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=a2a56636-f2bf-469f-9162-75b18cf0a849", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:07:59.213478Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=83d99a84-eb21-4bb8-a43b-0bf958027e81
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=83d99a84-eb21-4bb8-a43b-0bf958027e81", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:07:59.946677Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=ef59cdbe-75a8-498e-a82d-fb0b7a8113e7
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=ef59cdbe-75a8-498e-a82d-fb0b7a8113e7", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:07:59.988083Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=71a1462d-0928-477b-be91-f9eb33b55804
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=71a1462d-0928-477b-be91-f9eb33b55804", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:00.224939Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=66a3be87-9a88-4025-8c33-5c24952bf32b
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=66a3be87-9a88-4025-8c33-5c24952bf32b", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:00.307640Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=3f4d5681-ed24-4797-bf36-81ed9bb15ec6
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=3f4d5681-ed24-4797-bf36-81ed9bb15ec6", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:01.590287Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m value too long for type character varying(255)
+   0: lemmy_apub::objects::post::from_json
+             at crates/apub/src/objects/post.rs:165
+   1: lemmy_apub::activities::create_or_update::post::receive
+             at crates/apub/src/activities/create_or_update/post.rs:179
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=c194b097-7167-4f73-9a5f-3cc0a69cb4cf
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: value too long for type character varying(255), context: SpanTrace [{ target: "lemmy_apub::objects::post", name: "from_json", file: "crates/apub/src/objects/post.rs", line: 165 }, { target: "lemmy_apub::activities::create_or_update::post", name: "receive", file: "crates/apub/src/activities/create_or_update/post.rs", line: 179 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=c194b097-7167-4f73-9a5f-3cc0a69cb4cf", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:02.285096Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=747f214d-f954-4897-b06e-b07468e3cd06
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=747f214d-f954-4897-b06e-b07468e3cd06", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:02.887410Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m value too long for type character varying(255)
+   0: lemmy_apub::objects::post::from_json
+             at crates/apub/src/objects/post.rs:165
+   1: lemmy_apub::activities::create_or_update::post::receive
+             at crates/apub/src/activities/create_or_update/post.rs:179
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=32741667-b3c3-4b49-8ed2-2dfb0236fffd
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: value too long for type character varying(255), context: SpanTrace [{ target: "lemmy_apub::objects::post", name: "from_json", file: "crates/apub/src/objects/post.rs", line: 165 }, { target: "lemmy_apub::activities::create_or_update::post", name: "receive", file: "crates/apub/src/activities/create_or_update/post.rs", line: 179 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=32741667-b3c3-4b49-8ed2-2dfb0236fffd", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:03.033987Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=344a65a8-ca66-4d74-87eb-28f311bb2c92
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=344a65a8-ca66-4d74-87eb-28f311bb2c92", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:03.086681Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=42ca646e-19dd-4620-8d77-4c21d593aeaf
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=42ca646e-19dd-4620-8d77-4c21d593aeaf", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:03.172568Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m value too long for type character varying(255)
+   0: lemmy_apub::objects::post::from_json
+             at crates/apub/src/objects/post.rs:165
+   1: lemmy_apub::activities::create_or_update::post::receive
+             at crates/apub/src/activities/create_or_update/post.rs:179
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=21f76801-abdf-477d-a3b2-c1cd34c523c9
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: value too long for type character varying(255), context: SpanTrace [{ target: "lemmy_apub::objects::post", name: "from_json", file: "crates/apub/src/objects/post.rs", line: 165 }, { target: "lemmy_apub::activities::create_or_update::post", name: "receive", file: "crates/apub/src/activities/create_or_update/post.rs", line: 179 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=21f76801-abdf-477d-a3b2-c1cd34c523c9", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:03.707225Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=aa5b219a-5706-4de4-aebf-48f7e1f6ef77
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=aa5b219a-5706-4de4-aebf-48f7e1f6ef77", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:04.729753Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=3b29b915-bb61-427b-b6ff-47c53c1652b1
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=3b29b915-bb61-427b-b6ff-47c53c1652b1", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:04.958138Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=31c0b8aa-6ca0-455e-a6b8-a4c98ca9d352
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=31c0b8aa-6ca0-455e-a6b8-a4c98ca9d352", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:04.980046Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=fbcb49d0-fe3d-402d-ad7c-f12fecaa7e71
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=fbcb49d0-fe3d-402d-ad7c-f12fecaa7e71", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:05.648003Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a2460574-fd0c-4ff2-b5e7-346712ebbb1f
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=a2460574-fd0c-4ff2-b5e7-346712ebbb1f", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:05.908576Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=8e6c2e9b-5677-4956-9f93-e05061ddc329
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=8e6c2e9b-5677-4956-9f93-e05061ddc329", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:07.011995Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=296ceb23-b5c8-49a1-84e3-20bb0c1f9911
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=296ceb23-b5c8-49a1-84e3-20bb0c1f9911", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:07.824194Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=e4eefbd6-dc44-4265-a6e8-0e074c528f89
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=e4eefbd6-dc44-4265-a6e8-0e074c528f89", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:07.853234Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d614eb56-9711-4dc2-adf1-d71115d8df08
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=d614eb56-9711-4dc2-adf1-d71115d8df08", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:07.971307Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=34a0572f-27f3-4f10-bd01-737e0e041d1d
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=34a0572f-27f3-4f10-bd01-737e0e041d1d", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:07.984108Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=860bca38-c9ed-4150-8098-c82bb12e434e
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=860bca38-c9ed-4150-8098-c82bb12e434e", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:08.068687Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=ad50d7b0-72b6-4ee2-ab77-3b10fe2ed88f
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=ad50d7b0-72b6-4ee2-ab77-3b10fe2ed88f", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:08.162338Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=4d82a1ce-78f6-4597-8592-753dc50f2aa4
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=4d82a1ce-78f6-4597-8592-753dc50f2aa4", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:08.173792Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=30ea5a71-f202-4ee1-a551-a1fdd0666338
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=30ea5a71-f202-4ee1-a551-a1fdd0666338", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:08.699950Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=b2824ddc-8377-4c4d-b581-aff1045d15df
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=b2824ddc-8377-4c4d-b581-aff1045d15df", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:08.751306Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=fb639ee6-7a94-443f-9ab8-1d3a70a71c73
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=fb639ee6-7a94-443f-9ab8-1d3a70a71c73", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:09.060891Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=621a91c7-fe18-49a3-8ec7-6d499801429a
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=621a91c7-fe18-49a3-8ec7-6d499801429a", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:09.199910Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=f00875a1-855e-4125-aed4-4d6dcdf070b8
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=f00875a1-855e-4125-aed4-4d6dcdf070b8", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:10.196242Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a7bab0b8-6fff-4675-9af5-a7fab2d35144
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=a7bab0b8-6fff-4675-9af5-a7fab2d35144", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:10.456188Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=8399511f-f9e0-484f-a14e-a3d53f188441
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=8399511f-f9e0-484f-a14e-a3d53f188441", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:10.754225Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=412a91df-4339-48dc-8e2e-b4c72b2ab9c5
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=412a91df-4339-48dc-8e2e-b4c72b2ab9c5", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:10.817286Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=bb70aef8-a290-4d06-a584-d4d1e2ed2e57
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=bb70aef8-a290-4d06-a584-d4d1e2ed2e57", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:12.977604Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=8f41eca2-4b30-4e2e-8d1f-e8d6e2d7058b
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=8f41eca2-4b30-4e2e-8d1f-e8d6e2d7058b", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:12.991346Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=9fb7317a-0664-40ff-a227-03cc0ebf45bf
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=9fb7317a-0664-40ff-a227-03cc0ebf45bf", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:13.161312Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=b71cd019-317b-4b62-9c0d-24bd93bdef9d
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=b71cd019-317b-4b62-9c0d-24bd93bdef9d", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:13.232386Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=f9e615f7-0112-44da-9435-9bb8d6b3d624
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=f9e615f7-0112-44da-9435-9bb8d6b3d624", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:13.432211Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=aadb4028-a202-415c-ab06-701a13a1eb29
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=aadb4028-a202-415c-ab06-701a13a1eb29", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:13.579936Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=5bd83f84-10eb-4928-9369-2f4aa25bfc70
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=5bd83f84-10eb-4928-9369-2f4aa25bfc70", file: "src/root_span_builder.rs", line: 16 }] }
+[2m2023-07-04T16:08:14.556603Z[0m [33m WARN[0m [2mlemmy_server::root_span_builder[0m[2m:[0m EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   1: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   2: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d0a6f25a-3caa-4b69-91d8-a3185e53e186
+             at src/root_span_builder.rs:16
+LemmyError { message: None, inner: EOF while parsing a value at line 1 column 0, context: SpanTrace [{ target: "lemmy_apub::activity_lists", name: "community", file: "crates/apub/src/activity_lists.rs", line: 113 }, { target: "lemmy_apub::activities::community::announce", name: "receive", file: "crates/apub/src/activities/community/announce.rs", line: 46 }, { target: "lemmy_server::root_span_builder", name: "HTTP request", fields: "http.method=POST http.scheme=\"http\" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind=\"server\" request_id=d0a6f25a-3caa-4b69-91d8-a3185e53e186", file: "src/root_span_builder.rs", line: 16 }] }

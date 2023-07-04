@@ -1,0 +1,1484 @@
+{
+  "total_time_s": 95.708989955,
+  "unqueue_time_s": 42.820358967,
+  "clear_time_s": 52.888630988,
+  "activityqueue_stats": "Activity queue stats: pending: 0, running: 0, retries: 0, dead: 0, complete: 100000",
+  "db_stats": {
+    "comment_count": 13027,
+    "post_count": 4143,
+    "comment_like_count": 17382,
+    "post_like_count": 42029,
+    "activity_count": 99959,
+    "statement_count": 1391,
+    "statement_call_count": 3853284,
+    "total_plan_time_s": 0.0,
+    "total_exec_time_s": 9621.022776131995,
+    "top_queries_by_call_count": [
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"language\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 550954,
+        "total_exec_time": 81879.35771399931,
+        "mean_exec_time": 0.14861378211974036,
+        "rows": 550954
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"community\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 540643,
+        "total_exec_time": 12265.868033999866,
+        "mean_exec_time": 0.02268755543676742,
+        "rows": 540643
+      },
+      {
+        "query": "SELECT \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\" FROM \"post\" WHERE (\"post\".\"ap_id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 338999,
+        "total_exec_time": 11624.45421600002,
+        "mean_exec_time": 0.03429052656792499,
+        "rows": 286959
+      },
+      {
+        "query": "SELECT \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\" FROM \"person\" WHERE ((\"person\".\"deleted\" = $1) AND (\"person\".\"actor_id\" = $2)) LIMIT $3",
+        "toplevel": true,
+        "calls": 330118,
+        "total_exec_time": 11233.526357999935,
+        "mean_exec_time": 0.0340288210821584,
+        "rows": 320346
+      },
+      {
+        "query": "SELECT \"local_site\".\"id\", \"local_site\".\"site_id\", \"local_site\".\"site_setup\", \"local_site\".\"enable_downvotes\", \"local_site\".\"enable_nsfw\", \"local_site\".\"community_creation_admin_only\", \"local_site\".\"require_email_verification\", \"local_site\".\"application_question\", \"local_site\".\"private_instance\", \"local_site\".\"default_theme\", \"local_site\".\"default_post_listing_type\", \"local_site\".\"legal_information\", \"local_site\".\"hide_modlog_mod_names\", \"local_site\".\"application_email_admins\", \"local_site\".\"slur_filter_regex\", \"local_site\".\"actor_name_max_length\", \"local_site\".\"federation_enabled\", \"local_site\".\"captcha_enabled\", \"local_site\".\"captcha_difficulty\", \"local_site\".\"published\", \"local_site\".\"updated\", \"local_site\".\"registration_mode\", \"local_site\".\"reports_email_admins\" FROM \"local_site\" LIMIT $1",
+        "toplevel": true,
+        "calls": 258126,
+        "total_exec_time": 5733.293253000108,
+        "mean_exec_time": 0.02221121953232197,
+        "rows": 258125
+      },
+      {
+        "query": "SELECT \"community\".\"id\", \"community\".\"name\", \"community\".\"title\", \"community\".\"description\", \"community\".\"removed\", \"community\".\"published\", \"community\".\"updated\", \"community\".\"deleted\", \"community\".\"nsfw\", \"community\".\"actor_id\", \"community\".\"local\", \"community\".\"private_key\", \"community\".\"public_key\", \"community\".\"last_refreshed_at\", \"community\".\"icon\", \"community\".\"banner\", \"community\".\"followers_url\", \"community\".\"inbox_url\", \"community\".\"shared_inbox_url\", \"community\".\"hidden\", \"community\".\"posting_restricted_to_mods\", \"community\".\"instance_id\", \"community\".\"moderators_url\", \"community\".\"featured_url\" FROM \"community\" WHERE (\"community\".\"id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 204653,
+        "total_exec_time": 6510.143386000055,
+        "mean_exec_time": 0.031810642336051784,
+        "rows": 204653
+      },
+      {
+        "query": "SELECT \"instance\".\"id\", \"instance\".\"domain\", \"instance\".\"published\", \"instance\".\"updated\", \"instance\".\"software\", \"instance\".\"version\" FROM (\"instance\" INNER JOIN \"federation_allowlist\" ON (\"federation_allowlist\".\"instance_id\" = \"instance\".\"id\"))",
+        "toplevel": true,
+        "calls": 158166,
+        "total_exec_time": 4557.785777999937,
+        "mean_exec_time": 0.028816469898713858,
+        "rows": 0
+      },
+      {
+        "query": "SELECT \"instance\".\"id\", \"instance\".\"domain\", \"instance\".\"published\", \"instance\".\"updated\", \"instance\".\"software\", \"instance\".\"version\" FROM (\"instance\" INNER JOIN \"federation_blocklist\" ON (\"federation_blocklist\".\"instance_id\" = \"instance\".\"id\"))",
+        "toplevel": true,
+        "calls": 158166,
+        "total_exec_time": 4242.695988999918,
+        "mean_exec_time": 0.026824323742144832,
+        "rows": 0
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"user_\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 123429,
+        "total_exec_time": 2845.9845430000196,
+        "mean_exec_time": 0.02305766507870888,
+        "rows": 123429
+      },
+      {
+        "query": "SELECT \"community\".\"id\", \"community\".\"name\", \"community\".\"title\", \"community\".\"description\", \"community\".\"removed\", \"community\".\"published\", \"community\".\"updated\", \"community\".\"deleted\", \"community\".\"nsfw\", \"community\".\"actor_id\", \"community\".\"local\", \"community\".\"private_key\", \"community\".\"public_key\", \"community\".\"last_refreshed_at\", \"community\".\"icon\", \"community\".\"banner\", \"community\".\"followers_url\", \"community\".\"inbox_url\", \"community\".\"shared_inbox_url\", \"community\".\"hidden\", \"community\".\"posting_restricted_to_mods\", \"community\".\"instance_id\", \"community\".\"moderators_url\", \"community\".\"featured_url\", \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\" FROM ((\"community_person_ban\" INNER JOIN \"community\" ON (\"community_person_ban\".\"community_id\" = \"community\".\"id\")) INNER JOIN \"person\" ON (\"community_person_ban\".\"person_id\" = \"person\".\"id\")) WHERE ((\"community_person_ban\".\"community_id\" = $1) AND (\"community_person_ban\".\"person_id\" = $2)) ORDER BY \"community_person_ban\".\"published\" LIMIT $3",
+        "toplevel": true,
+        "calls": 117132,
+        "total_exec_time": 2634.602423999987,
+        "mean_exec_time": 0.022492593176928873,
+        "rows": 0
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"post\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 113690,
+        "total_exec_time": 2741.4066950000397,
+        "mean_exec_time": 0.024112997581141687,
+        "rows": 113690
+      },
+      {
+        "query": "INSERT INTO \"activity\" (\"data\", \"local\", \"updated\", \"ap_id\", \"sensitive\") VALUES ($1, $2, DEFAULT, $3, $4) RETURNING \"activity\".\"id\", \"activity\".\"data\", \"activity\".\"local\", \"activity\".\"published\", \"activity\".\"updated\", \"activity\".\"ap_id\", \"activity\".\"sensitive\"",
+        "toplevel": true,
+        "calls": 99959,
+        "total_exec_time": 6740.094660999971,
+        "mean_exec_time": 0.06742859233285599,
+        "rows": 99959
+      },
+      {
+        "query": "INSERT INTO \"post_like\" (\"post_id\", \"person_id\", \"score\") VALUES ($1, $2, $3) ON CONFLICT (\"post_id\", \"person_id\") DO UPDATE SET \"post_id\" = $4, \"person_id\" = $5, \"score\" = $6 RETURNING \"post_like\".\"id\", \"post_like\".\"post_id\", \"post_like\".\"person_id\", \"post_like\".\"score\", \"post_like\".\"published\"",
+        "toplevel": true,
+        "calls": 82164,
+        "total_exec_time": 2834940.8901400063,
+        "mean_exec_time": 34.50344299376912,
+        "rows": 82164
+      },
+      {
+        "query": "update post_aggregates pa\n    set score = score + NEW.score,\n    upvotes = case when NEW.score = $16 then upvotes + $17 else upvotes end,\n    downvotes = case when NEW.score = $18 then downvotes + $19 else downvotes end\n    where pa.post_id = NEW.post_id",
+        "toplevel": false,
+        "calls": 78731,
+        "total_exec_time": 29010.99135800013,
+        "mean_exec_time": 0.3684824447549295,
+        "rows": 78731
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score + NEW.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = NEW.post_id",
+        "toplevel": false,
+        "calls": 78731,
+        "total_exec_time": 2308824.959061976,
+        "mean_exec_time": 29.32548753428781,
+        "rows": 78731
+      },
+      {
+        "query": "DELETE  FROM \"post_like\" WHERE ((\"post_like\".\"post_id\" = $1) AND (\"post_like\".\"person_id\" = $2))",
+        "toplevel": true,
+        "calls": 78021,
+        "total_exec_time": 2156298.8446940347,
+        "mean_exec_time": 27.63741614044932,
+        "rows": 36702
+      },
+      {
+        "query": "SELECT \"comment\".\"id\", \"comment\".\"creator_id\", \"comment\".\"post_id\", \"comment\".\"content\", \"comment\".\"removed\", \"comment\".\"published\", \"comment\".\"updated\", \"comment\".\"deleted\", \"comment\".\"ap_id\", \"comment\".\"local\", \"comment\".\"path\", \"comment\".\"distinguished\", \"comment\".\"language_id\" FROM \"comment\" WHERE (\"comment\".\"ap_id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 52629,
+        "total_exec_time": 2239.178914999972,
+        "mean_exec_time": 0.04254648416272407,
+        "rows": 39561
+      },
+      {
+        "query": "SELECT \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\" FROM \"post\" WHERE (\"post\".\"id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 47823,
+        "total_exec_time": 2158.1814919999856,
+        "mean_exec_time": 0.04512852585576037,
+        "rows": 47823
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score - OLD.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = OLD.post_id",
+        "toplevel": false,
+        "calls": 36702,
+        "total_exec_time": 1872973.5647679896,
+        "mean_exec_time": 51.031921006157305,
+        "rows": 36702
+      },
+      {
+        "query": "update post_aggregates pa\n    set score = score - OLD.score,\n    upvotes = case when OLD.score = $18 then upvotes - $19 else upvotes end,\n    downvotes = case when OLD.score = $20 then downvotes - $21 else downvotes end\n    from post p\n    where pa.post_id = p.id\n    and pa.post_id = OLD.post_id",
+        "toplevel": false,
+        "calls": 36702,
+        "total_exec_time": 21769.990150999907,
+        "mean_exec_time": 0.5931554179881277,
+        "rows": 36702
+      }
+    ],
+    "top_queries_by_mean_time": [
+      {
+        "query": "ALTER TABLE user_ ADD COLUMN inbox_url varchar(255) NOT NULL DEFAULT generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 71.704788,
+        "mean_exec_time": 71.704788,
+        "rows": 0
+      },
+      {
+        "query": "ALTER TABLE community ADD COLUMN followers_url varchar(255) NOT NULL DEFAULT generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 56.73523,
+        "mean_exec_time": 56.73523,
+        "rows": 0
+      },
+      {
+        "query": "ALTER TABLE community ADD COLUMN inbox_url varchar(255) NOT NULL DEFAULT generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 56.286551,
+        "mean_exec_time": 56.286551,
+        "rows": 0
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score - OLD.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = OLD.post_id",
+        "toplevel": false,
+        "calls": 36702,
+        "total_exec_time": 1872973.5647679896,
+        "mean_exec_time": 51.031921006157305,
+        "rows": 36702
+      },
+      {
+        "query": "-- Enforce the limit\nalter table post alter column url type varchar (512)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 49.092269,
+        "mean_exec_time": 49.092269,
+        "rows": 0
+      },
+      {
+        "query": "INSERT INTO \"community_language\" (\"community_id\", \"language_id\") VALUES ($1, $2), ($3, $4), ($5, $6), ($7, $8), ($9, $10), ($11, $12), ($13, $14), ($15, $16), ($17, $18), ($19, $20), ($21, $22), ($23, $24), ($25, $26), ($27, $28), ($29, $30), ($31, $32), ($33, $34), ($35, $36), ($37, $38), ($39, $40), ($41, $42), ($43, $44), ($45, $46), ($47, $48), ($49, $50), ($51, $52), ($53, $54), ($55, $56), ($57, $58), ($59, $60), ($61, $62), ($63, $64), ($65, $66), ($67, $68), ($69, $70), ($71, $72), ($73, $74), ($75, $76), ($77, $78), ($79, $80), ($81, $82), ($83, $84), ($85, $86), ($87, $88), ($89, $90), ($91, $92), ($93, $94), ($95, $96), ($97, $98), ($99, $100), ($101, $102), ($103, $104), ($105, $106), ($107, $108), ($109, $110), ($111, $112), ($113, $114), ($115, $116), ($117, $118), ($119, $120), ($121, $122), ($123, $124), ($125, $126), ($127, $128), ($129, $130), ($131, $132), ($133, $134), ($135, $136), ($137, $138), ($139, $140), ($141, $142), ($143, $144), ($145, $146), ($147, $148), ($149, $150), ($151, $152), ($153, $154), ($155, $156), ($157, $158), ($159, $160), ($161, $162), ($163, $164), ($165, $166), ($167, $168), ($169, $170), ($171, $172), ($173, $174), ($175, $176), ($177, $178), ($179, $180), ($181, $182), ($183, $184), ($185, $186), ($187, $188), ($189, $190), ($191, $192), ($193, $194), ($195, $196), ($197, $198), ($199, $200), ($201, $202), ($203, $204), ($205, $206), ($207, $208), ($209, $210), ($211, $212), ($213, $214), ($215, $216), ($217, $218), ($219, $220), ($221, $222), ($223, $224), ($225, $226), ($227, $228), ($229, $230), ($231, $232), ($233, $234), ($235, $236), ($237, $238), ($239, $240), ($241, $242), ($243, $244), ($245, $246), ($247, $248), ($249, $250), ($251, $252), ($253, $254), ($255, $256), ($257, $258), ($259, $260), ($261, $262), ($263, $264), ($265, $266), ($267, $268), ($269, $270), ($271, $272), ($273, $274), ($275, $276), ($277, $278), ($279, $280), ($281, $282), ($283, $284), ($285, $286), ($287, $288), ($289, $290), ($291, $292), ($293, $294), ($295, $296), ($297, $298), ($299, $300), ($301, $302), ($303, $304), ($305, $306), ($307, $308), ($309, $310), ($311, $312), ($313, $314), ($315, $316), ($317, $318), ($319, $320), ($321, $322), ($323, $324), ($325, $326), ($327, $328), ($329, $330), ($331, $332), ($333, $334), ($335, $336), ($337, $338), ($339, $340), ($341, $342), ($343, $344), ($345, $346), ($347, $348), ($349, $350), ($351, $352), ($353, $354), ($355, $356), ($357, $358), ($359, $360), ($361, $362), ($363, $364), ($365, $366), ($367, $368) RETURNING \"community_language\".\"id\", \"community_language\".\"community_id\", \"community_language\".\"language_id\"",
+        "toplevel": true,
+        "calls": 2900,
+        "total_exec_time": 132740.34363800028,
+        "mean_exec_time": 45.772532288965465,
+        "rows": 533600
+      },
+      {
+        "query": "create table user_ (\n  id serial primary key,\n  name varchar(20) not null,\n  fedi_name varchar(40) not null,\n  preferred_username varchar(20),\n  password_encrypted text not null,\n  email text unique,\n  icon bytea,\n  admin boolean default false not null,\n  banned boolean default false not null,\n  published timestamp not null default now(),\n  updated timestamp,\n  unique(name, fedi_name)\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 37.998489,
+        "mean_exec_time": 37.998489,
+        "rows": 0
+      },
+      {
+        "query": "create table custom_emoji (\n  id serial primary key,\n  local_site_id int references local_site on update cascade on delete cascade not null,\n  shortcode varchar(128) not null UNIQUE,\n  image_url text not null UNIQUE,\n  alt_text text not null,\n  category text not null,\n  published timestamp without time zone default now() not null,\n  updated timestamp without time zone\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 34.909757,
+        "mean_exec_time": 34.909757,
+        "rows": 0
+      },
+      {
+        "query": "INSERT INTO \"post_like\" (\"post_id\", \"person_id\", \"score\") VALUES ($1, $2, $3) ON CONFLICT (\"post_id\", \"person_id\") DO UPDATE SET \"post_id\" = $4, \"person_id\" = $5, \"score\" = $6 RETURNING \"post_like\".\"id\", \"post_like\".\"post_id\", \"post_like\".\"person_id\", \"post_like\".\"score\", \"post_like\".\"published\"",
+        "toplevel": true,
+        "calls": 82164,
+        "total_exec_time": 2834940.8901400063,
+        "mean_exec_time": 34.50344299376912,
+        "rows": 82164
+      },
+      {
+        "query": "alter table site\n    add column actor_id varchar(255) not null unique default generate_unique_changeme(),\n    add column last_refreshed_at Timestamp not null default now(),\n    add column inbox_url varchar(255) not null default generate_unique_changeme(),\n    add column private_key text,\n    add column public_key text not null default generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 34.089246,
+        "mean_exec_time": 34.089246,
+        "rows": 0
+      },
+      {
+        "query": "-- create a new table local_user\ncreate table local_user (\n  id serial primary key,\n  person_id int references person on update cascade on delete cascade not null,\n  password_encrypted text not null,\n  email text unique,\n  admin boolean default false not null,\n  show_nsfw boolean default false not null,\n  theme character varying(20) default 'darkly'::character varying not null,\n  default_sort_type smallint default 0 not null,\n  default_listing_type smallint default 1 not null,\n  lang character varying(20) default 'browser'::character varying not null,\n  show_avatars boolean default true not null,\n  send_notifications_to_email boolean default false not null,\n  matrix_user_id text,\n  unique (person_id)\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 33.787493,
+        "mean_exec_time": 33.787493,
+        "rows": 0
+      },
+      {
+        "query": "alter table user_ alter column avatar type text",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 33.659766,
+        "mean_exec_time": 33.659766,
+        "rows": 0
+      },
+      {
+        "query": "alter table local_user alter column default_sort_type type sort_type_enum using\n    case default_sort_type\n        when 0 then 'Active'\n        when 1 then 'Hot'\n        when 2 then 'New'\n        when 3 then 'Old'\n        when 4 then 'TopDay'\n        when 5 then 'TopWeek'\n        when 6 then 'TopMonth'\n        when 7 then 'TopYear'\n        when 8 then 'TopAll'\n        when 9 then 'MostComments'\n        when 10 then 'NewComments'\n        else 'Active'\n    end :: sort_type_enum",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 32.992169,
+        "mean_exec_time": 32.992169,
+        "rows": 0
+      },
+      {
+        "query": "alter table local_user alter column default_listing_type type listing_type_enum using\n    case default_listing_type\n        when 0 then 'All'\n        when 1 then 'Local'\n        when 2 then 'Subscribed'\n        else 'Local'\n    end :: listing_type_enum",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 32.370839,
+        "mean_exec_time": 32.370839,
+        "rows": 0
+      },
+      {
+        "query": "CREATE DATABASE \"lemmy\"",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 31.838945,
+        "mean_exec_time": 31.838945,
+        "rows": 0
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score + NEW.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = NEW.post_id",
+        "toplevel": false,
+        "calls": 78731,
+        "total_exec_time": 2308824.959061976,
+        "mean_exec_time": 29.32548753428781,
+        "rows": 78731
+      },
+      {
+        "query": "create table post_report (\n  id            serial    primary key,\n  creator_id    int       references user_ on update cascade on delete cascade not null, -- user reporting post\n  post_id       int       references post on update cascade on delete cascade not null,  -- post being reported\n  original_post_name\t  varchar(100) not null,\n  original_post_url       text,\n  original_post_body      text,\n  reason        text      not null,\n  resolved      bool      not null default false,\n  resolver_id   int       references user_ on update cascade on delete cascade,   -- user resolving report\n  published     timestamp not null default now(),\n  updated       timestamp null,\n  unique(post_id, creator_id) -- users should only be able to report a post once\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 29.011487,
+        "mean_exec_time": 29.011487,
+        "rows": 0
+      },
+      {
+        "query": "create table captcha_answer (\n    id serial primary key,\n    uuid uuid not null unique default gen_random_uuid(),\n    answer text not null,\n    published timestamp not null default now()\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 27.938792,
+        "mean_exec_time": 27.938792,
+        "rows": 0
+      },
+      {
+        "query": "DELETE  FROM \"post_like\" WHERE ((\"post_like\".\"post_id\" = $1) AND (\"post_like\".\"person_id\" = $2))",
+        "toplevel": true,
+        "calls": 78021,
+        "total_exec_time": 2156298.8446940347,
+        "mean_exec_time": 27.63741614044932,
+        "rows": 36702
+      },
+      {
+        "query": "-- Move all the extra site settings-type columns to a local_site table\n-- Add a lot of other fields currently in the lemmy.hjson\ncreate table local_site (\n  id serial primary key,\n  site_id int references site on update cascade on delete cascade not null unique,\n\n  -- Site table fields\n  site_setup boolean default false not null,\n  enable_downvotes boolean default true not null,\n  open_registration boolean default true not null,\n  enable_nsfw boolean default true not null,\n  community_creation_admin_only boolean default false not null,\n  require_email_verification boolean default false not null,\n  require_application boolean default true not null,\n  application_question text default 'to verify that you are human, please explain why you want to create an account on this site'::text,\n  private_instance boolean default false not null,\n  default_theme text default 'browser'::text not null,\n  default_post_listing_type text default 'Local'::text not null,\n  legal_information text,\n  hide_modlog_mod_names boolean default true not null,\n  application_email_admins boolean default false not null,\n\n  -- Fields from lemmy.hjson\n  slur_filter_regex text,\n  actor_name_max_length int default 20 not null,\n  federation_enabled boolean default true not null,\n  federation_debug boolean default false not null,\n  federation_strict_allowlist boolean default true not null,\n  federation_http_fetch_retry_limit int default 25 not null,\n  federation_worker_count int default 64 not null,\n  captcha_enabled boolean default false not null,\n  captcha_difficulty varchar(255) default 'medium' not null,\n\n  -- Time fields\n  published timestamp without time zone default now() not null,\n  updated timestamp without time zone\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 26.578469,
+        "mean_exec_time": 26.578469,
+        "rows": 0
+      }
+    ],
+    "top_queries_by_total_time": [
+      {
+        "query": "INSERT INTO \"post_like\" (\"post_id\", \"person_id\", \"score\") VALUES ($1, $2, $3) ON CONFLICT (\"post_id\", \"person_id\") DO UPDATE SET \"post_id\" = $4, \"person_id\" = $5, \"score\" = $6 RETURNING \"post_like\".\"id\", \"post_like\".\"post_id\", \"post_like\".\"person_id\", \"post_like\".\"score\", \"post_like\".\"published\"",
+        "toplevel": true,
+        "calls": 82164,
+        "total_exec_time": 2834940.8901400063,
+        "mean_exec_time": 34.50344299376912,
+        "rows": 82164
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score + NEW.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = NEW.post_id",
+        "toplevel": false,
+        "calls": 78731,
+        "total_exec_time": 2308824.959061976,
+        "mean_exec_time": 29.32548753428781,
+        "rows": 78731
+      },
+      {
+        "query": "DELETE  FROM \"post_like\" WHERE ((\"post_like\".\"post_id\" = $1) AND (\"post_like\".\"person_id\" = $2))",
+        "toplevel": true,
+        "calls": 78021,
+        "total_exec_time": 2156298.8446940347,
+        "mean_exec_time": 27.63741614044932,
+        "rows": 36702
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score - OLD.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = OLD.post_id",
+        "toplevel": false,
+        "calls": 36702,
+        "total_exec_time": 1872973.5647679896,
+        "mean_exec_time": 51.031921006157305,
+        "rows": 36702
+      },
+      {
+        "query": "INSERT INTO \"community_language\" (\"community_id\", \"language_id\") VALUES ($1, $2), ($3, $4), ($5, $6), ($7, $8), ($9, $10), ($11, $12), ($13, $14), ($15, $16), ($17, $18), ($19, $20), ($21, $22), ($23, $24), ($25, $26), ($27, $28), ($29, $30), ($31, $32), ($33, $34), ($35, $36), ($37, $38), ($39, $40), ($41, $42), ($43, $44), ($45, $46), ($47, $48), ($49, $50), ($51, $52), ($53, $54), ($55, $56), ($57, $58), ($59, $60), ($61, $62), ($63, $64), ($65, $66), ($67, $68), ($69, $70), ($71, $72), ($73, $74), ($75, $76), ($77, $78), ($79, $80), ($81, $82), ($83, $84), ($85, $86), ($87, $88), ($89, $90), ($91, $92), ($93, $94), ($95, $96), ($97, $98), ($99, $100), ($101, $102), ($103, $104), ($105, $106), ($107, $108), ($109, $110), ($111, $112), ($113, $114), ($115, $116), ($117, $118), ($119, $120), ($121, $122), ($123, $124), ($125, $126), ($127, $128), ($129, $130), ($131, $132), ($133, $134), ($135, $136), ($137, $138), ($139, $140), ($141, $142), ($143, $144), ($145, $146), ($147, $148), ($149, $150), ($151, $152), ($153, $154), ($155, $156), ($157, $158), ($159, $160), ($161, $162), ($163, $164), ($165, $166), ($167, $168), ($169, $170), ($171, $172), ($173, $174), ($175, $176), ($177, $178), ($179, $180), ($181, $182), ($183, $184), ($185, $186), ($187, $188), ($189, $190), ($191, $192), ($193, $194), ($195, $196), ($197, $198), ($199, $200), ($201, $202), ($203, $204), ($205, $206), ($207, $208), ($209, $210), ($211, $212), ($213, $214), ($215, $216), ($217, $218), ($219, $220), ($221, $222), ($223, $224), ($225, $226), ($227, $228), ($229, $230), ($231, $232), ($233, $234), ($235, $236), ($237, $238), ($239, $240), ($241, $242), ($243, $244), ($245, $246), ($247, $248), ($249, $250), ($251, $252), ($253, $254), ($255, $256), ($257, $258), ($259, $260), ($261, $262), ($263, $264), ($265, $266), ($267, $268), ($269, $270), ($271, $272), ($273, $274), ($275, $276), ($277, $278), ($279, $280), ($281, $282), ($283, $284), ($285, $286), ($287, $288), ($289, $290), ($291, $292), ($293, $294), ($295, $296), ($297, $298), ($299, $300), ($301, $302), ($303, $304), ($305, $306), ($307, $308), ($309, $310), ($311, $312), ($313, $314), ($315, $316), ($317, $318), ($319, $320), ($321, $322), ($323, $324), ($325, $326), ($327, $328), ($329, $330), ($331, $332), ($333, $334), ($335, $336), ($337, $338), ($339, $340), ($341, $342), ($343, $344), ($345, $346), ($347, $348), ($349, $350), ($351, $352), ($353, $354), ($355, $356), ($357, $358), ($359, $360), ($361, $362), ($363, $364), ($365, $366), ($367, $368) RETURNING \"community_language\".\"id\", \"community_language\".\"community_id\", \"community_language\".\"language_id\"",
+        "toplevel": true,
+        "calls": 2900,
+        "total_exec_time": 132740.34363800028,
+        "mean_exec_time": 45.772532288965465,
+        "rows": 533600
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"language\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 550954,
+        "total_exec_time": 81879.35771399931,
+        "mean_exec_time": 0.14861378211974036,
+        "rows": 550954
+      },
+      {
+        "query": "update post_aggregates pa\n    set score = score + NEW.score,\n    upvotes = case when NEW.score = $16 then upvotes + $17 else upvotes end,\n    downvotes = case when NEW.score = $18 then downvotes + $19 else downvotes end\n    where pa.post_id = NEW.post_id",
+        "toplevel": false,
+        "calls": 78731,
+        "total_exec_time": 29010.99135800013,
+        "mean_exec_time": 0.3684824447549295,
+        "rows": 78731
+      },
+      {
+        "query": "INSERT INTO \"comment\" (\"creator_id\", \"post_id\", \"content\", \"removed\", \"published\", \"updated\", \"deleted\", \"ap_id\", \"local\", \"distinguished\", \"language_id\") VALUES ($1, $2, $3, DEFAULT, $4, DEFAULT, $5, $6, $7, DEFAULT, DEFAULT) ON CONFLICT (\"ap_id\") DO UPDATE SET \"creator_id\" = $8, \"post_id\" = $9, \"content\" = $10, \"published\" = $11, \"deleted\" = $12, \"ap_id\" = $13, \"local\" = $14 RETURNING \"comment\".\"id\", \"comment\".\"creator_id\", \"comment\".\"post_id\", \"comment\".\"content\", \"comment\".\"removed\", \"comment\".\"published\", \"comment\".\"updated\", \"comment\".\"deleted\", \"comment\".\"ap_id\", \"comment\".\"local\", \"comment\".\"path\", \"comment\".\"distinguished\", \"comment\".\"language_id\"",
+        "toplevel": true,
+        "calls": 13027,
+        "total_exec_time": 27835.052952999984,
+        "mean_exec_time": 2.1367201161433993,
+        "rows": 13027
+      },
+      {
+        "query": "update post_aggregates pa\n    set score = score - OLD.score,\n    upvotes = case when OLD.score = $18 then upvotes - $19 else upvotes end,\n    downvotes = case when OLD.score = $20 then downvotes - $21 else downvotes end\n    from post p\n    where pa.post_id = p.id\n    and pa.post_id = OLD.post_id",
+        "toplevel": false,
+        "calls": 36702,
+        "total_exec_time": 21769.990150999907,
+        "mean_exec_time": 0.5931554179881277,
+        "rows": 36702
+      },
+      {
+        "query": "INSERT INTO \"comment_like\" (\"person_id\", \"comment_id\", \"post_id\", \"score\") VALUES ($1, $2, $3, $4) ON CONFLICT (\"comment_id\", \"person_id\") DO UPDATE SET \"person_id\" = $5, \"comment_id\" = $6, \"post_id\" = $7, \"score\" = $8 RETURNING \"comment_like\".\"id\", \"comment_like\".\"person_id\", \"comment_like\".\"comment_id\", \"comment_like\".\"post_id\", \"comment_like\".\"score\", \"comment_like\".\"published\"",
+        "toplevel": true,
+        "calls": 17792,
+        "total_exec_time": 16095.051901999992,
+        "mean_exec_time": 0.9046229711106116,
+        "rows": 17792
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"community\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 540643,
+        "total_exec_time": 12265.868033999866,
+        "mean_exec_time": 0.02268755543676742,
+        "rows": 540643
+      },
+      {
+        "query": "SELECT \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\" FROM \"post\" WHERE (\"post\".\"ap_id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 338999,
+        "total_exec_time": 11624.45421600002,
+        "mean_exec_time": 0.03429052656792499,
+        "rows": 286959
+      },
+      {
+        "query": "SELECT \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\" FROM \"person\" WHERE ((\"person\".\"deleted\" = $1) AND (\"person\".\"actor_id\" = $2)) LIMIT $3",
+        "toplevel": true,
+        "calls": 330118,
+        "total_exec_time": 11233.526357999935,
+        "mean_exec_time": 0.0340288210821584,
+        "rows": 320346
+      },
+      {
+        "query": "INSERT INTO \"post\" (\"name\", \"creator_id\", \"community_id\", \"nsfw\", \"url\", \"body\", \"removed\", \"locked\", \"updated\", \"published\", \"deleted\", \"embed_title\", \"embed_description\", \"embed_video_url\", \"thumbnail_url\", \"ap_id\", \"local\", \"language_id\", \"featured_community\", \"featured_local\") VALUES ($1, $2, $3, $4, DEFAULT, $5, DEFAULT, $6, DEFAULT, $7, $8, DEFAULT, DEFAULT, DEFAULT, DEFAULT, $9, $10, DEFAULT, DEFAULT, DEFAULT) ON CONFLICT (\"ap_id\") DO UPDATE SET \"name\" = $11, \"creator_id\" = $12, \"community_id\" = $13, \"nsfw\" = $14, \"body\" = $15, \"locked\" = $16, \"published\" = $17, \"deleted\" = $18, \"ap_id\" = $19, \"local\" = $20 RETURNING \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\"",
+        "toplevel": true,
+        "calls": 4143,
+        "total_exec_time": 7115.271001999977,
+        "mean_exec_time": 1.7174199860004846,
+        "rows": 4143
+      },
+      {
+        "query": "INSERT INTO \"activity\" (\"data\", \"local\", \"updated\", \"ap_id\", \"sensitive\") VALUES ($1, $2, DEFAULT, $3, $4) RETURNING \"activity\".\"id\", \"activity\".\"data\", \"activity\".\"local\", \"activity\".\"published\", \"activity\".\"updated\", \"activity\".\"ap_id\", \"activity\".\"sensitive\"",
+        "toplevel": true,
+        "calls": 99959,
+        "total_exec_time": 6740.094660999971,
+        "mean_exec_time": 0.06742859233285599,
+        "rows": 99959
+      },
+      {
+        "query": "SELECT \"community\".\"id\", \"community\".\"name\", \"community\".\"title\", \"community\".\"description\", \"community\".\"removed\", \"community\".\"published\", \"community\".\"updated\", \"community\".\"deleted\", \"community\".\"nsfw\", \"community\".\"actor_id\", \"community\".\"local\", \"community\".\"private_key\", \"community\".\"public_key\", \"community\".\"last_refreshed_at\", \"community\".\"icon\", \"community\".\"banner\", \"community\".\"followers_url\", \"community\".\"inbox_url\", \"community\".\"shared_inbox_url\", \"community\".\"hidden\", \"community\".\"posting_restricted_to_mods\", \"community\".\"instance_id\", \"community\".\"moderators_url\", \"community\".\"featured_url\" FROM \"community\" WHERE (\"community\".\"id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 204653,
+        "total_exec_time": 6510.143386000055,
+        "mean_exec_time": 0.031810642336051784,
+        "rows": 204653
+      },
+      {
+        "query": "INSERT INTO \"person\" (\"name\", \"public_key\", \"instance_id\", \"display_name\", \"avatar\", \"banned\", \"published\", \"updated\", \"actor_id\", \"bio\", \"local\", \"private_key\", \"last_refreshed_at\", \"banner\", \"deleted\", \"inbox_url\", \"shared_inbox_url\", \"matrix_user_id\", \"admin\", \"bot_account\", \"ban_expires\") VALUES ($1, $2, $3, $4, DEFAULT, DEFAULT, DEFAULT, DEFAULT, $5, DEFAULT, $6, DEFAULT, $7, DEFAULT, $8, $9, DEFAULT, DEFAULT, $10, $11, DEFAULT) ON CONFLICT (\"actor_id\") DO UPDATE SET \"name\" = $12, \"public_key\" = $13, \"instance_id\" = $14, \"display_name\" = $15, \"actor_id\" = $16, \"local\" = $17, \"last_refreshed_at\" = $18, \"deleted\" = $19, \"inbox_url\" = $20, \"admin\" = $21, \"bot_account\" = $22 RETURNING \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\"",
+        "toplevel": true,
+        "calls": 9772,
+        "total_exec_time": 5906.410506000003,
+        "mean_exec_time": 0.6044218692181736,
+        "rows": 9772
+      },
+      {
+        "query": "SELECT \"local_site\".\"id\", \"local_site\".\"site_id\", \"local_site\".\"site_setup\", \"local_site\".\"enable_downvotes\", \"local_site\".\"enable_nsfw\", \"local_site\".\"community_creation_admin_only\", \"local_site\".\"require_email_verification\", \"local_site\".\"application_question\", \"local_site\".\"private_instance\", \"local_site\".\"default_theme\", \"local_site\".\"default_post_listing_type\", \"local_site\".\"legal_information\", \"local_site\".\"hide_modlog_mod_names\", \"local_site\".\"application_email_admins\", \"local_site\".\"slur_filter_regex\", \"local_site\".\"actor_name_max_length\", \"local_site\".\"federation_enabled\", \"local_site\".\"captcha_enabled\", \"local_site\".\"captcha_difficulty\", \"local_site\".\"published\", \"local_site\".\"updated\", \"local_site\".\"registration_mode\", \"local_site\".\"reports_email_admins\" FROM \"local_site\" LIMIT $1",
+        "toplevel": true,
+        "calls": 258126,
+        "total_exec_time": 5733.293253000108,
+        "mean_exec_time": 0.02221121953232197,
+        "rows": 258125
+      },
+      {
+        "query": "UPDATE \"comment_aggregates\" SET \"hot_rank\" = hot_rank(\"comment_aggregates\".\"score\", \"comment_aggregates\".\"published\") WHERE (\"comment_aggregates\".\"comment_id\" = $1) RETURNING \"comment_aggregates\".\"id\", \"comment_aggregates\".\"comment_id\", \"comment_aggregates\".\"score\", \"comment_aggregates\".\"upvotes\", \"comment_aggregates\".\"downvotes\", \"comment_aggregates\".\"published\", \"comment_aggregates\".\"child_count\", \"comment_aggregates\".\"hot_rank\"",
+        "toplevel": true,
+        "calls": 13027,
+        "total_exec_time": 4664.43710499999,
+        "mean_exec_time": 0.35805919283027554,
+        "rows": 13027
+      },
+      {
+        "query": "SELECT \"instance\".\"id\", \"instance\".\"domain\", \"instance\".\"published\", \"instance\".\"updated\", \"instance\".\"software\", \"instance\".\"version\" FROM (\"instance\" INNER JOIN \"federation_allowlist\" ON (\"federation_allowlist\".\"instance_id\" = \"instance\".\"id\"))",
+        "toplevel": true,
+        "calls": 158166,
+        "total_exec_time": 4557.785777999937,
+        "mean_exec_time": 0.028816469898713858,
+        "rows": 0
+      }
+    ]
+  },
+  "config": {
+    "local_server": "http://reddit.com.localhost:5313/",
+    "remote_server": "http://lemmy.localhost:8536/inbox",
+    "server_pid": 2843776,
+    "input_file": "data/Import-Reddit-Dump-v1/dump.jsonl.zst",
+    "federation_workers": 100,
+    "output_json": "results/runs/2023-07-04T16:07:41+00:00-phiresky:community-fetch-fix (44e3464)/info.json",
+    "runname": "phiresky:community-fetch-fix (44e3464)"
+  },
+  "server_usage": [
+    {
+      "time_s": 0.001103058,
+      "usermode_time_s": 0.2,
+      "kernel_time_s": 0.05,
+      "num_threads": 28,
+      "memory_rss_bytes": 37498880,
+      "memory_rss_max_bytes": 37498880,
+      "read_bytes": 0,
+      "write_bytes": 4096
+    },
+    {
+      "time_s": 1.00194856,
+      "usermode_time_s": 1.94,
+      "kernel_time_s": 0.6,
+      "num_threads": 46,
+      "memory_rss_bytes": 63643648,
+      "memory_rss_max_bytes": 63643648,
+      "read_bytes": 0,
+      "write_bytes": 4096
+    },
+    {
+      "time_s": 2.002096156,
+      "usermode_time_s": 3.83,
+      "kernel_time_s": 1.32,
+      "num_threads": 46,
+      "memory_rss_bytes": 66138112,
+      "memory_rss_max_bytes": 66138112,
+      "read_bytes": 0,
+      "write_bytes": 4096
+    },
+    {
+      "time_s": 3.001045925,
+      "usermode_time_s": 5.92,
+      "kernel_time_s": 2.24,
+      "num_threads": 46,
+      "memory_rss_bytes": 66924544,
+      "memory_rss_max_bytes": 66924544,
+      "read_bytes": 0,
+      "write_bytes": 4096
+    },
+    {
+      "time_s": 4.001104335,
+      "usermode_time_s": 8.1,
+      "kernel_time_s": 3.17,
+      "num_threads": 46,
+      "memory_rss_bytes": 66924544,
+      "memory_rss_max_bytes": 66924544,
+      "read_bytes": 0,
+      "write_bytes": 4096
+    },
+    {
+      "time_s": 5.001379833,
+      "usermode_time_s": 10.38,
+      "kernel_time_s": 4.14,
+      "num_threads": 46,
+      "memory_rss_bytes": 66924544,
+      "memory_rss_max_bytes": 66924544,
+      "read_bytes": 0,
+      "write_bytes": 8192
+    },
+    {
+      "time_s": 6.003501712,
+      "usermode_time_s": 12.76,
+      "kernel_time_s": 5.05,
+      "num_threads": 46,
+      "memory_rss_bytes": 66924544,
+      "memory_rss_max_bytes": 66924544,
+      "read_bytes": 0,
+      "write_bytes": 8192
+    },
+    {
+      "time_s": 7.000970645,
+      "usermode_time_s": 15.12,
+      "kernel_time_s": 6.0,
+      "num_threads": 46,
+      "memory_rss_bytes": 67260416,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 12288
+    },
+    {
+      "time_s": 8.001253884,
+      "usermode_time_s": 17.5,
+      "kernel_time_s": 6.97,
+      "num_threads": 46,
+      "memory_rss_bytes": 67260416,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 12288
+    },
+    {
+      "time_s": 9.002853686,
+      "usermode_time_s": 19.89,
+      "kernel_time_s": 7.96,
+      "num_threads": 46,
+      "memory_rss_bytes": 67260416,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 16384
+    },
+    {
+      "time_s": 10.001319815,
+      "usermode_time_s": 22.33,
+      "kernel_time_s": 8.85,
+      "num_threads": 45,
+      "memory_rss_bytes": 67272704,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 20480
+    },
+    {
+      "time_s": 11.001608367,
+      "usermode_time_s": 24.5,
+      "kernel_time_s": 10.04,
+      "num_threads": 27,
+      "memory_rss_bytes": 65638400,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 24576
+    },
+    {
+      "time_s": 12.001853516,
+      "usermode_time_s": 26.94,
+      "kernel_time_s": 10.99,
+      "num_threads": 27,
+      "memory_rss_bytes": 65638400,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 28672
+    },
+    {
+      "time_s": 13.004179519,
+      "usermode_time_s": 29.33,
+      "kernel_time_s": 11.97,
+      "num_threads": 27,
+      "memory_rss_bytes": 65888256,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 32768
+    },
+    {
+      "time_s": 14.00215469,
+      "usermode_time_s": 31.76,
+      "kernel_time_s": 12.94,
+      "num_threads": 27,
+      "memory_rss_bytes": 65888256,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 36864
+    },
+    {
+      "time_s": 15.002360418,
+      "usermode_time_s": 34.29,
+      "kernel_time_s": 13.82,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 45056
+    },
+    {
+      "time_s": 16.001107762,
+      "usermode_time_s": 36.72,
+      "kernel_time_s": 14.79,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 49152
+    },
+    {
+      "time_s": 17.00356783,
+      "usermode_time_s": 39.09,
+      "kernel_time_s": 15.81,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 49152
+    },
+    {
+      "time_s": 18.001951554,
+      "usermode_time_s": 41.44,
+      "kernel_time_s": 16.85,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 53248
+    },
+    {
+      "time_s": 19.005151059,
+      "usermode_time_s": 43.79,
+      "kernel_time_s": 17.89,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 53248
+    },
+    {
+      "time_s": 20.000928801,
+      "usermode_time_s": 46.26,
+      "kernel_time_s": 18.8,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 21.002325072,
+      "usermode_time_s": 48.57,
+      "kernel_time_s": 19.87,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 22.001153462,
+      "usermode_time_s": 50.78,
+      "kernel_time_s": 20.9,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 23.002394134,
+      "usermode_time_s": 52.92,
+      "kernel_time_s": 21.82,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 24.00120623,
+      "usermode_time_s": 54.96,
+      "kernel_time_s": 22.69,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 25.003217947,
+      "usermode_time_s": 57.03,
+      "kernel_time_s": 23.59,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 26.005223463,
+      "usermode_time_s": 59.23,
+      "kernel_time_s": 24.54,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 27.002409146,
+      "usermode_time_s": 61.39,
+      "kernel_time_s": 25.49,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 28.002992524,
+      "usermode_time_s": 63.67,
+      "kernel_time_s": 26.38,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 29.003898395,
+      "usermode_time_s": 65.83,
+      "kernel_time_s": 27.35,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 30.002679906,
+      "usermode_time_s": 67.93,
+      "kernel_time_s": 28.31,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 31.001052334,
+      "usermode_time_s": 70.1,
+      "kernel_time_s": 29.27,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 32.001015378,
+      "usermode_time_s": 72.27,
+      "kernel_time_s": 30.28,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 33.001064763,
+      "usermode_time_s": 74.49,
+      "kernel_time_s": 31.19,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 34.001033666,
+      "usermode_time_s": 76.69,
+      "kernel_time_s": 32.22,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 35.000998213,
+      "usermode_time_s": 78.81,
+      "kernel_time_s": 33.27,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 36.001708503,
+      "usermode_time_s": 79.92,
+      "kernel_time_s": 33.85,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 37.000921559,
+      "usermode_time_s": 80.59,
+      "kernel_time_s": 34.2,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 38.000889725,
+      "usermode_time_s": 81.16,
+      "kernel_time_s": 34.52,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 39.00130534,
+      "usermode_time_s": 81.66,
+      "kernel_time_s": 34.87,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 40.001209459,
+      "usermode_time_s": 82.18,
+      "kernel_time_s": 35.13,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 41.001030207,
+      "usermode_time_s": 82.7,
+      "kernel_time_s": 35.48,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 42.000983656,
+      "usermode_time_s": 83.26,
+      "kernel_time_s": 35.74,
+      "num_threads": 29,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 43.001642413,
+      "usermode_time_s": 83.77,
+      "kernel_time_s": 36.0,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 44.00131384,
+      "usermode_time_s": 84.37,
+      "kernel_time_s": 36.3,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 45.001825531,
+      "usermode_time_s": 84.91,
+      "kernel_time_s": 36.65,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 46.001393201,
+      "usermode_time_s": 85.55,
+      "kernel_time_s": 36.95,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 47.0011948,
+      "usermode_time_s": 86.2,
+      "kernel_time_s": 37.36,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 48.001198733,
+      "usermode_time_s": 86.85,
+      "kernel_time_s": 37.7,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 49.00142074,
+      "usermode_time_s": 87.44,
+      "kernel_time_s": 38.07,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 50.001404281,
+      "usermode_time_s": 87.98,
+      "kernel_time_s": 38.42,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 51.001521766,
+      "usermode_time_s": 88.55,
+      "kernel_time_s": 38.79,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 52.001777926,
+      "usermode_time_s": 89.11,
+      "kernel_time_s": 39.08,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 53.001085093,
+      "usermode_time_s": 89.72,
+      "kernel_time_s": 39.43,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 54.00123877,
+      "usermode_time_s": 90.3,
+      "kernel_time_s": 39.75,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 55.001451578,
+      "usermode_time_s": 90.93,
+      "kernel_time_s": 40.08,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 56.00132402,
+      "usermode_time_s": 91.54,
+      "kernel_time_s": 40.42,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 57.001926597,
+      "usermode_time_s": 92.13,
+      "kernel_time_s": 40.75,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 58.001264569,
+      "usermode_time_s": 92.68,
+      "kernel_time_s": 41.05,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 59.001641235,
+      "usermode_time_s": 93.22,
+      "kernel_time_s": 41.33,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 60.000931442,
+      "usermode_time_s": 93.77,
+      "kernel_time_s": 41.71,
+      "num_threads": 27,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 61.001026191,
+      "usermode_time_s": 95.18,
+      "kernel_time_s": 42.4,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 62.001320835,
+      "usermode_time_s": 96.19,
+      "kernel_time_s": 43.04,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 63.001348662,
+      "usermode_time_s": 97.0,
+      "kernel_time_s": 43.44,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 64.00192491,
+      "usermode_time_s": 97.71,
+      "kernel_time_s": 43.86,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 65.000962116,
+      "usermode_time_s": 98.45,
+      "kernel_time_s": 44.27,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 66.000907262,
+      "usermode_time_s": 99.23,
+      "kernel_time_s": 44.63,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 67.001282242,
+      "usermode_time_s": 99.73,
+      "kernel_time_s": 45.05,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 68.001499741,
+      "usermode_time_s": 100.31,
+      "kernel_time_s": 45.42,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 69.001345455,
+      "usermode_time_s": 100.92,
+      "kernel_time_s": 45.84,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 70.001725409,
+      "usermode_time_s": 101.54,
+      "kernel_time_s": 46.24,
+      "num_threads": 30,
+      "memory_rss_bytes": 66428928,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 71.001636602,
+      "usermode_time_s": 102.14,
+      "kernel_time_s": 46.6,
+      "num_threads": 27,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 72.001893404,
+      "usermode_time_s": 102.73,
+      "kernel_time_s": 46.99,
+      "num_threads": 27,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 73.001501399,
+      "usermode_time_s": 104.58,
+      "kernel_time_s": 47.86,
+      "num_threads": 28,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 74.001328203,
+      "usermode_time_s": 106.9,
+      "kernel_time_s": 48.86,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 75.001393513,
+      "usermode_time_s": 108.21,
+      "kernel_time_s": 49.63,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 76.00088124,
+      "usermode_time_s": 108.89,
+      "kernel_time_s": 50.0,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 77.001485448,
+      "usermode_time_s": 109.39,
+      "kernel_time_s": 50.32,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 78.001360504,
+      "usermode_time_s": 109.94,
+      "kernel_time_s": 50.53,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 79.00125844,
+      "usermode_time_s": 110.45,
+      "kernel_time_s": 50.78,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 80.000942933,
+      "usermode_time_s": 110.9,
+      "kernel_time_s": 51.04,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 81.001084926,
+      "usermode_time_s": 111.35,
+      "kernel_time_s": 51.3,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 82.001939414,
+      "usermode_time_s": 111.91,
+      "kernel_time_s": 51.63,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 83.001164691,
+      "usermode_time_s": 112.43,
+      "kernel_time_s": 51.92,
+      "num_threads": 28,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 84.001088289,
+      "usermode_time_s": 112.94,
+      "kernel_time_s": 52.27,
+      "num_threads": 27,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 85.001331771,
+      "usermode_time_s": 113.57,
+      "kernel_time_s": 52.67,
+      "num_threads": 27,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 86.001420734,
+      "usermode_time_s": 114.2,
+      "kernel_time_s": 53.0,
+      "num_threads": 27,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 87.001403553,
+      "usermode_time_s": 114.73,
+      "kernel_time_s": 53.34,
+      "num_threads": 27,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 88.001209814,
+      "usermode_time_s": 115.83,
+      "kernel_time_s": 53.85,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 89.001279934,
+      "usermode_time_s": 118.31,
+      "kernel_time_s": 54.7,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 90.002108108,
+      "usermode_time_s": 120.72,
+      "kernel_time_s": 55.65,
+      "num_threads": 29,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 91.002418444,
+      "usermode_time_s": 123.17,
+      "kernel_time_s": 56.63,
+      "num_threads": 31,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 92.001680926,
+      "usermode_time_s": 125.58,
+      "kernel_time_s": 57.58,
+      "num_threads": 31,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 93.00257055,
+      "usermode_time_s": 127.95,
+      "kernel_time_s": 58.54,
+      "num_threads": 31,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 94.001189464,
+      "usermode_time_s": 130.3,
+      "kernel_time_s": 59.54,
+      "num_threads": 31,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 95.000957139,
+      "usermode_time_s": 132.79,
+      "kernel_time_s": 60.39,
+      "num_threads": 31,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    },
+    {
+      "time_s": 96.001019668,
+      "usermode_time_s": 134.52,
+      "kernel_time_s": 61.04,
+      "num_threads": 31,
+      "memory_rss_bytes": 66433024,
+      "memory_rss_max_bytes": 67465216,
+      "read_bytes": 0,
+      "write_bytes": 61440
+    }
+  ]
+}
