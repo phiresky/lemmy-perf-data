@@ -1,0 +1,504 @@
+federation enabled, host is lemmy-alpha
+Starting http server at 0.0.0.0:8536
+2023-07-04T00:48:32.371419Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/pokemontrades/comments/z97xu1/lf_iron_valiant_ft_all_scarlet_paradox_no_roaring/iyff48a/ object_id=http://reddit.com.localhost:5313/r/pokemontrades/comments/z97xu1/lf_iron_valiant_ft_all_scarlet_paradox_no_roaring/iyff48a/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=9bc280fc-47aa-4dff-a064-d26673bbed0c
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:32.746468Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/KUWTK/comments/z97w3u/stormi_and_her_nanny/iyff8dv/ object_id=http://reddit.com.localhost:5313/r/KUWTK/comments/z97w3u/stormi_and_her_nanny/iyff8dv/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d51d7dd6-b060-4334-8110-ba8ecab7fc0a
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:34.564065Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/BrainFog/comments/z97zoa/my_doctor_has_found_my_cause/iyffu25/ object_id=http://reddit.com.localhost:5313/r/BrainFog/comments/z97zoa/my_doctor_has_found_my_cause/iyffu25/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d2e956a5-e4d6-4b46-891b-e1bb01792804
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:34.590192Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/interestingasfuck/comments/z97zix/world_cup_fifa_augmented_reality_in_action/iyfftfh/ object_id=http://reddit.com.localhost:5313/r/interestingasfuck/comments/z97zix/world_cup_fifa_augmented_reality_in_action/iyfftfh/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=9fcf95eb-09e8-490c-b690-f67b2186f642
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:35.017855Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/FreeKarma4You/comments/z982u9/im_sending_my_nudes_to_anyone_who_upvote_me_hmu/iyffyno/ object_id=http://reddit.com.localhost:5313/r/FreeKarma4You/comments/z982u9/im_sending_my_nudes_to_anyone_who_upvote_me_hmu/iyffyno/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=8e50739c-daa8-4e87-9496-4b4cd821c295
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:36.587468Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/saskatchewan/comments/z97y69/in_honour_of_the_saskatchewan_first_act_the/iyfgffp/ object_id=http://reddit.com.localhost:5313/r/saskatchewan/comments/z97y69/in_honour_of_the_saskatchewan_first_act_the/iyfgffp/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=ef9f6591-4e56-41ea-b40b-df5297e84af4
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:37.402200Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/pokemontrades/comments/z98103/lf_scyther_w_metal_coat_ft_scyther_w_metal_coat/iyfgnh2/ object_id=http://reddit.com.localhost:5313/r/pokemontrades/comments/z98103/lf_scyther_w_metal_coat_ft_scyther_w_metal_coat/iyfgnh2/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=6052147d-33fe-4106-889d-bfb1b7b27052
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:37.435922Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/Nofans/comments/z981av/anybody_have_a_thing_for_overalls/iyfgnt8/ object_id=http://reddit.com.localhost:5313/r/Nofans/comments/z981av/anybody_have_a_thing_for_overalls/iyfgnt8/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=10007c6f-7ae7-464a-9f96-99ec497310c4
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:37.722308Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/Nofans/comments/z987sg/this_is_what_you_could_have_if_i_was_at_your_party/iyfgq1u/ object_id=http://reddit.com.localhost:5313/r/Nofans/comments/z987sg/this_is_what_you_could_have_if_i_was_at_your_party/iyfgq1u/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=654b839f-bcb7-4e4b-8b2d-d02a7008407d
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:37.843242Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/WouldYouFuckMyWife/comments/z983a5/how_many_times_a_day_would_you_fuck_my_wife/iyfgr0s/ object_id=http://reddit.com.localhost:5313/r/WouldYouFuckMyWife/comments/z983a5/how_many_times_a_day_would_you_fuck_my_wife/iyfgr0s/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a44625eb-2c4b-4f46-98ca-40a8ea54ca39
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:39.224181Z  WARN lemmy_server::root_span_builder: value too long for type character varying(255)
+   0: lemmy_apub::objects::post::from_json
+             at crates/apub/src/objects/post.rs:165
+   1: lemmy_apub::activities::create_or_update::post::receive
+             at crates/apub/src/activities/create_or_update/post.rs:179
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=aa562117-36c1-4fb6-b175-11586c1a97cf
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:40.054854Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/NoahGetTheBoat/comments/z988b4/removed_by_reddit/iyfh96q/ object_id=http://reddit.com.localhost:5313/r/NoahGetTheBoat/comments/z988b4/removed_by_reddit/iyfh96q/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d3b6c70e-6bec-43d7-86b7-b04d4e56179c
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:40.723336Z  WARN lemmy_server::root_span_builder: value too long for type character varying(255)
+   0: lemmy_apub::objects::post::from_json
+             at crates/apub/src/objects/post.rs:165
+   1: lemmy_apub::activities::create_or_update::post::receive
+             at crates/apub/src/activities/create_or_update/post.rs:179
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a006dafb-f1a8-4090-9c72-720eafa3dced
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:40.900662Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/DeutscheNSFW/comments/z98ea4/auf_dir_sitzen/iyfhgfb/ object_id=http://reddit.com.localhost:5313/r/DeutscheNSFW/comments/z98ea4/auf_dir_sitzen/iyfhgfb/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a3e86cfc-79da-4e8f-829a-7e292430feef
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:40.970731Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/perfectlycutscreams/comments/z98el4/thought_this_might_belong_here/iyfhh3b/ object_id=http://reddit.com.localhost:5313/r/perfectlycutscreams/comments/z98el4/thought_this_might_belong_here/iyfhh3b/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=9246337c-a443-4e18-975b-39342e316123
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:41.079351Z  WARN lemmy_server::root_span_builder: value too long for type character varying(255)
+   0: lemmy_apub::objects::post::from_json
+             at crates/apub/src/objects/post.rs:165
+   1: lemmy_apub::activities::create_or_update::post::receive
+             at crates/apub/src/activities/create_or_update/post.rs:179
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=1d491b90-fd08-4b75-a681-d180c1bdb944
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:41.660693Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/guns/comments/z97xjc/disappointed_in_the_savage_axis_ii/iyfhmkv/ object_id=http://reddit.com.localhost:5313/r/guns/comments/z97xjc/disappointed_in_the_savage_axis_ii/iyfhmkv/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=e90bc244-ce6f-4a4c-b9b5-f32a00efc8c9
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:42.843125Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/Scams/comments/z988fd/scammer/iyfhvb4/ object_id=http://reddit.com.localhost:5313/r/Scams/comments/z988fd/scammer/iyfhvb4/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=deea6a20-3310-4ae1-ba78-4a36a76ad7f9
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:43.115517Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CasualPokemonTrades/comments/z98ezg/violet_tradeback_my_scytherslowpoke_to_get/iyfhxal/ object_id=http://reddit.com.localhost:5313/r/CasualPokemonTrades/comments/z98ezg/violet_tradeback_my_scytherslowpoke_to_get/iyfhxal/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=226ec6c7-ef1f-453e-89d0-f3ed0972ee6b
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:43.127904Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/IAmTheMainCharacter/comments/z98hmh/tiktok_influencer_with_over_9_million_followers/iyfhxfz/ object_id=http://reddit.com.localhost:5313/r/IAmTheMainCharacter/comments/z98hmh/tiktok_influencer_with_over_9_million_followers/iyfhxfz/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=ca656d7b-fe0d-49ef-8a9f-fe9d77984f2a
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:43.860438Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/real_China_irl/comments/z98g34/%E4%B8%80%E4%B8%AA%E7%96%91%E9%97%AE%E4%BF%9D%E5%AE%89%E6%98%AF%E4%B8%8D%E6%98%AF%E9%BB%91%E7%9A%AE%E5%88%BB%E6%84%8F%E7%95%99%E5%87%BA%E6%9D%A5%E7%9A%84%E7%81%B0%E8%89%B2%E5%9C%B0%E5%B8%A6%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%B8%8D%E6%80%8E%E4%B9%88%E5%85%89%E5%BD%A9%E7%9A%84%E6%B4%BB%E7%9A%84/iyfi1zj/ object_id=http://reddit.com.localhost:5313/r/real_China_irl/comments/z98g34/%E4%B8%80%E4%B8%AA%E7%96%91%E9%97%AE%E4%BF%9D%E5%AE%89%E6%98%AF%E4%B8%8D%E6%98%AF%E9%BB%91%E7%9A%AE%E5%88%BB%E6%84%8F%E7%95%99%E5%87%BA%E6%9D%A5%E7%9A%84%E7%81%B0%E8%89%B2%E5%9C%B0%E5%B8%A6%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%B8%8D%E6%80%8E%E4%B9%88%E5%85%89%E5%BD%A9%E7%9A%84%E6%B4%BB%E7%9A%84/iyfi1zj/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=cf2b63e1-df0d-43b1-bb9d-7f4e710f572b
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:44.196770Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/ukraine/comments/z97yxu/%D0%B7%D1%81%D1%83_are_sending_their_regards_welcome_to_ukraine/iyfi49v/ object_id=http://reddit.com.localhost:5313/r/ukraine/comments/z97yxu/%D0%B7%D1%81%D1%83_are_sending_their_regards_welcome_to_ukraine/iyfi49v/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d84d63df-8835-4ded-9c02-fe26c73331ec
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:45.479273Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CasualPokemonTrades/comments/z98ezg/violet_tradeback_my_scytherslowpoke_to_get/iyfid55/ object_id=http://reddit.com.localhost:5313/r/CasualPokemonTrades/comments/z98ezg/violet_tradeback_my_scytherslowpoke_to_get/iyfid55/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=3f63669e-4cb8-4200-83dc-80b173915951
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:45.894550Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/Unexpected/comments/z989l0/finding_love_at_a_trump_rally/iyfifm1/ object_id=http://reddit.com.localhost:5313/r/Unexpected/comments/z989l0/finding_love_at_a_trump_rally/iyfifm1/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=dc555201-35f7-4831-b8d2-5dcc288895fa
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:46.457782Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CryptoCurrency/comments/z98k9v/bitcoin_forks/iyfiikc/ object_id=http://reddit.com.localhost:5313/r/CryptoCurrency/comments/z98k9v/bitcoin_forks/iyfiikc/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=55b9f482-f778-41f6-a5c2-d0910040546b
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:46.484391Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CrossStitch/comments/z97wdb/mod_decembers_monthly_competition_third_annual/iyfij1n/ object_id=http://reddit.com.localhost:5313/r/CrossStitch/comments/z97wdb/mod_decembers_monthly_competition_third_annual/iyfij1n/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=26ea4600-5f24-4d5d-9dd2-532fa8be0418
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:46.638047Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfik4u/ object_id=http://reddit.com.localhost:5313/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfik4u/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=42c48f2b-8383-47fb-b98e-8b2ccd65dfc2
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:46.644745Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfik5y/ object_id=http://reddit.com.localhost:5313/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfik5y/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=411f5b35-bef5-4e0c-abf3-06893e5cbf31
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:46.751146Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfikti/ object_id=http://reddit.com.localhost:5313/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfikti/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d7684532-3bde-40a9-98b0-345c28e62783
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:46.863729Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfilh5/ object_id=http://reddit.com.localhost:5313/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfilh5/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=d23fb0ff-3b03-47d0-ae6b-0ac685c50f5d
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:46.881211Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfilj9/ object_id=http://reddit.com.localhost:5313/r/CryptoCurrency/comments/z989q3/ripples_counsel_allegedly_blames_sec_for_blockfi/iyfilj9/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a2f7b412-4e9e-42b7-bab7-b5ed862413b8
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:47.547812Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/saskatchewan/comments/z97y69/in_honour_of_the_saskatchewan_first_act_the/iyfip5i/ object_id=http://reddit.com.localhost:5313/r/saskatchewan/comments/z97y69/in_honour_of_the_saskatchewan_first_act_the/iyfip5i/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=ff80e73d-8a4d-4c35-a54c-1ea73945d716
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:47.588447Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/Scams/comments/z98mve/is_this_an_employment_scam_they_want_to_send_a/iyfipih/ object_id=http://reddit.com.localhost:5313/r/Scams/comments/z98mve/is_this_an_employment_scam_they_want_to_send_a/iyfipih/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=44f42fed-c308-4380-80eb-a18df638f118
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:48.024238Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/PlantIdentification/comments/z98iw2/these_small_fruits_that_grow_in_my_neighbors_yard/iyfis3k/ object_id=http://reddit.com.localhost:5313/r/PlantIdentification/comments/z98iw2/these_small_fruits_that_grow_in_my_neighbors_yard/iyfis3k/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=8447556b-473e-4ad0-9659-0fbd0aab7f61
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:48.193986Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/WouldYouFuckMyWife/comments/z98k0k/who_would_fuck_my_sexy_latina_wife/iyfit91/ object_id=http://reddit.com.localhost:5313/r/WouldYouFuckMyWife/comments/z98k0k/who_would_fuck_my_sexy_latina_wife/iyfit91/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=a571854b-b83c-4654-b6fc-7807fdcdec6b
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:49.441535Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/MaraikesRoad2Xmas/comments/z98nye/so_what_do_you_boys_like/iyfj0nc/ object_id=http://reddit.com.localhost:5313/r/MaraikesRoad2Xmas/comments/z98nye/so_what_do_you_boys_like/iyfj0nc/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=2e99e44f-7e84-4369-b3db-3ae66902cf90
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:50.361097Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/Buttcoin/comments/z98a20/ftxs_8_billion_lost_is_this_lost_fiat_or_funny/iyfj4rd/ object_id=http://reddit.com.localhost:5313/r/Buttcoin/comments/z98a20/ftxs_8_billion_lost_is_this_lost_fiat_or_funny/iyfj4rd/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=8fac479f-0300-4891-ae1d-3f8686b70999
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:50.393620Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/TikTokCringe/comments/z98pdy/on_point_artist_shows_off_how_he_created_the/iyfj56v/ object_id=http://reddit.com.localhost:5313/r/TikTokCringe/comments/z98pdy/on_point_artist_shows_off_how_he_created_the/iyfj56v/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=fad4245b-80d5-4932-adec-ed9086e4929e
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:53.144282Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/schizoposters/comments/z98sw0/omg_haiiiii_3/iyfjk5o/ object_id=http://reddit.com.localhost:5313/r/schizoposters/comments/z98sw0/omg_haiiiii_3/iyfjk5o/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=4fb5ed83-30f4-4601-812d-f131e4bee1a2
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:53.149164Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/Pokemongiveaway/comments/z98fka/9th_sandy_shocks_giveaway_for_violet_players/iyfjk5j/ object_id=http://reddit.com.localhost:5313/r/Pokemongiveaway/comments/z98fka/9th_sandy_shocks_giveaway_for_violet_players/iyfjk5j/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=44122c74-de2c-4732-8bdc-abcd263f7930
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:53.399081Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/socialskills/comments/z98nnn/28m_never_dated_scared_to_ask_women_out_because_i/iyfjlgf/ object_id=http://reddit.com.localhost:5313/r/socialskills/comments/z98nnn/28m_never_dated_scared_to_ask_women_out_because_i/iyfjlgf/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=9d02cb79-75c9-429e-9cc4-f17a3c5a16d7
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:53.514450Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/GunAccessoriesForSale/comments/z98cvy/wts_slr_g45_magwell_blk_fl/iyfjlwq/ object_id=http://reddit.com.localhost:5313/r/GunAccessoriesForSale/comments/z98cvy/wts_slr_g45_magwell_blk_fl/iyfjlwq/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=ef5250ac-ab5a-4368-8f74-868d6ad641f8
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:53.732218Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/real_China_irl/comments/z98g34/%E4%B8%80%E4%B8%AA%E7%96%91%E9%97%AE%E4%BF%9D%E5%AE%89%E6%98%AF%E4%B8%8D%E6%98%AF%E9%BB%91%E7%9A%AE%E5%88%BB%E6%84%8F%E7%95%99%E5%87%BA%E6%9D%A5%E7%9A%84%E7%81%B0%E8%89%B2%E5%9C%B0%E5%B8%A6%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%B8%8D%E6%80%8E%E4%B9%88%E5%85%89%E5%BD%A9%E7%9A%84%E6%B4%BB%E7%9A%84/iyfjmy1/ object_id=http://reddit.com.localhost:5313/r/real_China_irl/comments/z98g34/%E4%B8%80%E4%B8%AA%E7%96%91%E9%97%AE%E4%BF%9D%E5%AE%89%E6%98%AF%E4%B8%8D%E6%98%AF%E9%BB%91%E7%9A%AE%E5%88%BB%E6%84%8F%E7%95%99%E5%87%BA%E6%9D%A5%E7%9A%84%E7%81%B0%E8%89%B2%E5%9C%B0%E5%B8%A6%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%B8%8D%E6%80%8E%E4%B9%88%E5%85%89%E5%BD%A9%E7%9A%84%E6%B4%BB%E7%9A%84/iyfjmy1/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=069b0c66-9ec6-43db-9789-9a608402d531
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:53.980348Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/pakistan/comments/z98m08/a_depressing_realization_as_an_osp/iyfjo5v/ object_id=http://reddit.com.localhost:5313/r/pakistan/comments/z98m08/a_depressing_realization_as_an_osp/iyfjo5v/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=592ee7b7-15ed-47de-905d-04b29cb266c0
+             at src/root_span_builder.rs:16
+2023-07-04T00:48:55.154721Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::create_or_update::note::community
+           with id=http://reddit.com.localhost:5313/activity-create/r/TikTokCringe/comments/z98ucc/ole_boy_snitched_on_everybody_when_the_snacks_hit/iyfjugm/ object_id=http://reddit.com.localhost:5313/r/TikTokCringe/comments/z98ucc/ole_boy_snitched_on_everybody_when_the_snacks_hit/iyfjugm/
+             at crates/apub/src/protocol/activities/create_or_update/note.rs:37
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=11246c51-43a0-4094-885d-d428f37362a0
+             at src/root_span_builder.rs:16
+2023-07-04T00:49:40.270416Z  WARN lemmy_server::root_span_builder: EOF while parsing a value at line 1 column 0
+   0: lemmy_apub::protocol::activities::voting::vote::community
+             at crates/apub/src/protocol/activities/voting/vote.rs:55
+   1: lemmy_apub::activity_lists::community
+             at crates/apub/src/activity_lists.rs:113
+   2: lemmy_apub::activities::community::announce::receive
+             at crates/apub/src/activities/community/announce.rs:46
+   3: lemmy_server::root_span_builder::HTTP request
+           with http.method=POST http.scheme="http" http.host=lemmy.localhost:8536 http.target=/inbox otel.kind="server" request_id=2e975cc1-8ba0-4c84-a5ab-1567f0eee78e
+             at src/root_span_builder.rs:16

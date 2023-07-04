@@ -1,0 +1,511 @@
+{
+  "total_time_s": 100.291498352,
+  "unqueue_time_s": 50.707844169,
+  "clear_time_s": 49.583654183,
+  "activityqueue_stats": "Some(Activity queue stats: pending: 0, running: 0, retries: 0, dead: 0, complete: 100000)",
+  "db_stats": {
+    "comment_count": 13028,
+    "post_count": 4143,
+    "comment_like_count": 17382,
+    "post_like_count": 42029,
+    "activity_count": 99959,
+    "statement_count": 1385,
+    "statement_call_count": 3856454,
+    "total_plan_time_s": 0.0,
+    "total_exec_time_s": 7910.010549435017,
+    "top_queries_by_call_count": [
+      {
+        "query": "SELECT $1",
+        "toplevel": true,
+        "calls": 2090943,
+        "total_exec_time": 4820.2477610000415,
+        "mean_exec_time": 0.0023052984997676885,
+        "rows": 2090943
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"language\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 550955,
+        "total_exec_time": 60637.51301899996,
+        "mean_exec_time": 0.1100589213620044,
+        "rows": 550955
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"community\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 540643,
+        "total_exec_time": 12248.688904999652,
+        "mean_exec_time": 0.022655780071137464,
+        "rows": 540643
+      },
+      {
+        "query": "SELECT \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\" FROM \"post\" WHERE (\"post\".\"ap_id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 339002,
+        "total_exec_time": 13923.131414999782,
+        "mean_exec_time": 0.04107094180860217,
+        "rows": 286959
+      },
+      {
+        "query": "SELECT \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\" FROM \"person\" WHERE ((\"person\".\"deleted\" = $1) AND (\"person\".\"actor_id\" = $2)) LIMIT $3",
+        "toplevel": true,
+        "calls": 330120,
+        "total_exec_time": 11624.923160000188,
+        "mean_exec_time": 0.03521423470253186,
+        "rows": 320364
+      },
+      {
+        "query": "SELECT \"local_site\".\"id\", \"local_site\".\"site_id\", \"local_site\".\"site_setup\", \"local_site\".\"enable_downvotes\", \"local_site\".\"enable_nsfw\", \"local_site\".\"community_creation_admin_only\", \"local_site\".\"require_email_verification\", \"local_site\".\"application_question\", \"local_site\".\"private_instance\", \"local_site\".\"default_theme\", \"local_site\".\"default_post_listing_type\", \"local_site\".\"legal_information\", \"local_site\".\"hide_modlog_mod_names\", \"local_site\".\"application_email_admins\", \"local_site\".\"slur_filter_regex\", \"local_site\".\"actor_name_max_length\", \"local_site\".\"federation_enabled\", \"local_site\".\"captcha_enabled\", \"local_site\".\"captcha_difficulty\", \"local_site\".\"published\", \"local_site\".\"updated\", \"local_site\".\"registration_mode\", \"local_site\".\"reports_email_admins\" FROM \"local_site\" LIMIT $1",
+        "toplevel": true,
+        "calls": 258067,
+        "total_exec_time": 7649.724102000062,
+        "mean_exec_time": 0.029642395587192255,
+        "rows": 258066
+      },
+      {
+        "query": "SELECT \"community\".\"id\", \"community\".\"name\", \"community\".\"title\", \"community\".\"description\", \"community\".\"removed\", \"community\".\"published\", \"community\".\"updated\", \"community\".\"deleted\", \"community\".\"nsfw\", \"community\".\"actor_id\", \"community\".\"local\", \"community\".\"private_key\", \"community\".\"public_key\", \"community\".\"last_refreshed_at\", \"community\".\"icon\", \"community\".\"banner\", \"community\".\"followers_url\", \"community\".\"inbox_url\", \"community\".\"shared_inbox_url\", \"community\".\"hidden\", \"community\".\"posting_restricted_to_mods\", \"community\".\"instance_id\", \"community\".\"moderators_url\", \"community\".\"featured_url\" FROM \"community\" WHERE (\"community\".\"id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 204654,
+        "total_exec_time": 8081.130490000044,
+        "mean_exec_time": 0.0394867947364821,
+        "rows": 204654
+      },
+      {
+        "query": "SELECT \"instance\".\"id\", \"instance\".\"domain\", \"instance\".\"published\", \"instance\".\"updated\", \"instance\".\"software\", \"instance\".\"version\" FROM (\"instance\" INNER JOIN \"federation_allowlist\" ON (\"federation_allowlist\".\"instance_id\" = \"instance\".\"id\"))",
+        "toplevel": true,
+        "calls": 158107,
+        "total_exec_time": 5094.902793999982,
+        "mean_exec_time": 0.03222439736381035,
+        "rows": 0
+      },
+      {
+        "query": "SELECT \"instance\".\"id\", \"instance\".\"domain\", \"instance\".\"published\", \"instance\".\"updated\", \"instance\".\"software\", \"instance\".\"version\" FROM (\"instance\" INNER JOIN \"federation_blocklist\" ON (\"federation_blocklist\".\"instance_id\" = \"instance\".\"id\"))",
+        "toplevel": true,
+        "calls": 158107,
+        "total_exec_time": 4448.3709039999885,
+        "mean_exec_time": 0.028135192648016737,
+        "rows": 0
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"user_\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 123997,
+        "total_exec_time": 2851.587282000029,
+        "mean_exec_time": 0.022997228013580975,
+        "rows": 123997
+      },
+      {
+        "query": "SELECT \"community\".\"id\", \"community\".\"name\", \"community\".\"title\", \"community\".\"description\", \"community\".\"removed\", \"community\".\"published\", \"community\".\"updated\", \"community\".\"deleted\", \"community\".\"nsfw\", \"community\".\"actor_id\", \"community\".\"local\", \"community\".\"private_key\", \"community\".\"public_key\", \"community\".\"last_refreshed_at\", \"community\".\"icon\", \"community\".\"banner\", \"community\".\"followers_url\", \"community\".\"inbox_url\", \"community\".\"shared_inbox_url\", \"community\".\"hidden\", \"community\".\"posting_restricted_to_mods\", \"community\".\"instance_id\", \"community\".\"moderators_url\", \"community\".\"featured_url\", \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\" FROM ((\"community_person_ban\" INNER JOIN \"community\" ON (\"community_person_ban\".\"community_id\" = \"community\".\"id\")) INNER JOIN \"person\" ON (\"community_person_ban\".\"person_id\" = \"person\".\"id\")) WHERE ((\"community_person_ban\".\"community_id\" = $1) AND (\"community_person_ban\".\"person_id\" = $2)) ORDER BY \"community_person_ban\".\"published\" LIMIT $3",
+        "toplevel": true,
+        "calls": 117133,
+        "total_exec_time": 2778.934255000003,
+        "mean_exec_time": 0.023724605832685784,
+        "rows": 0
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"post\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 114258,
+        "total_exec_time": 2867.615574000032,
+        "mean_exec_time": 0.025097722470198907,
+        "rows": 114258
+      },
+      {
+        "query": "INSERT INTO \"activity\" (\"data\", \"local\", \"updated\", \"ap_id\", \"sensitive\") VALUES ($1, $2, DEFAULT, $3, $4) RETURNING \"activity\".\"id\", \"activity\".\"data\", \"activity\".\"local\", \"activity\".\"published\", \"activity\".\"updated\", \"activity\".\"ap_id\", \"activity\".\"sensitive\"",
+        "toplevel": true,
+        "calls": 99959,
+        "total_exec_time": 7181.561217999884,
+        "mean_exec_time": 0.07184506865814987,
+        "rows": 99959
+      },
+      {
+        "query": "INSERT INTO \"post_like\" (\"post_id\", \"person_id\", \"score\") VALUES ($1, $2, $3) ON CONFLICT (\"post_id\", \"person_id\") DO UPDATE SET \"post_id\" = $4, \"person_id\" = $5, \"score\" = $6 RETURNING \"post_like\".\"id\", \"post_like\".\"post_id\", \"post_like\".\"person_id\", \"post_like\".\"score\", \"post_like\".\"published\"",
+        "toplevel": true,
+        "calls": 82164,
+        "total_exec_time": 2292102.512251044,
+        "mean_exec_time": 27.896676308979547,
+        "rows": 82164
+      },
+      {
+        "query": "update post_aggregates pa\n    set score = score + NEW.score,\n    upvotes = case when NEW.score = $16 then upvotes + $17 else upvotes end,\n    downvotes = case when NEW.score = $18 then downvotes + $19 else downvotes end\n    where pa.post_id = NEW.post_id",
+        "toplevel": false,
+        "calls": 79295,
+        "total_exec_time": 26293.729700000185,
+        "mean_exec_time": 0.3315937915379247,
+        "rows": 79295
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score + NEW.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = NEW.post_id",
+        "toplevel": false,
+        "calls": 79295,
+        "total_exec_time": 1861870.493271996,
+        "mean_exec_time": 23.48030132129398,
+        "rows": 79295
+      },
+      {
+        "query": "DELETE  FROM \"post_like\" WHERE ((\"post_like\".\"post_id\" = $1) AND (\"post_like\".\"person_id\" = $2))",
+        "toplevel": true,
+        "calls": 78021,
+        "total_exec_time": 1786303.902115001,
+        "mean_exec_time": 22.895167994706767,
+        "rows": 37266
+      },
+      {
+        "query": "SELECT \"comment\".\"id\", \"comment\".\"creator_id\", \"comment\".\"post_id\", \"comment\".\"content\", \"comment\".\"removed\", \"comment\".\"published\", \"comment\".\"updated\", \"comment\".\"deleted\", \"comment\".\"ap_id\", \"comment\".\"local\", \"comment\".\"path\", \"comment\".\"distinguished\", \"comment\".\"language_id\" FROM \"comment\" WHERE (\"comment\".\"ap_id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 52633,
+        "total_exec_time": 2238.408241000016,
+        "mean_exec_time": 0.04252860830657582,
+        "rows": 39564
+      },
+      {
+        "query": "SELECT \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\" FROM \"post\" WHERE (\"post\".\"id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 47828,
+        "total_exec_time": 2272.4274280000013,
+        "mean_exec_time": 0.0475124911767165,
+        "rows": 47828
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score - OLD.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = OLD.post_id",
+        "toplevel": false,
+        "calls": 37266,
+        "total_exec_time": 1565375.5151809924,
+        "mean_exec_time": 42.00546114906342,
+        "rows": 37266
+      }
+    ],
+    "top_queries_by_mean_time": [
+      {
+        "query": "ALTER TABLE user_ ADD COLUMN inbox_url varchar(255) NOT NULL DEFAULT generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 79.524056,
+        "mean_exec_time": 79.524056,
+        "rows": 0
+      },
+      {
+        "query": "ALTER TABLE community ADD COLUMN followers_url varchar(255) NOT NULL DEFAULT generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 74.038313,
+        "mean_exec_time": 74.038313,
+        "rows": 0
+      },
+      {
+        "query": "ALTER TABLE community ADD COLUMN inbox_url varchar(255) NOT NULL DEFAULT generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 65.75462,
+        "mean_exec_time": 65.75462,
+        "rows": 0
+      },
+      {
+        "query": "-- Enforce the limit\nalter table post alter column url type varchar (512)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 53.774614,
+        "mean_exec_time": 53.774614,
+        "rows": 0
+      },
+      {
+        "query": "alter table local_user alter column default_listing_type type listing_type_enum using\n    case default_listing_type\n        when 0 then 'All'\n        when 1 then 'Local'\n        when 2 then 'Subscribed'\n        else 'Local'\n    end :: listing_type_enum",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 45.455382,
+        "mean_exec_time": 45.455382,
+        "rows": 0
+      },
+      {
+        "query": "create table user_ (\n  id serial primary key,\n  name varchar(20) not null,\n  fedi_name varchar(40) not null,\n  preferred_username varchar(20),\n  password_encrypted text not null,\n  email text unique,\n  icon bytea,\n  admin boolean default false not null,\n  banned boolean default false not null,\n  published timestamp not null default now(),\n  updated timestamp,\n  unique(name, fedi_name)\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 42.12824,
+        "mean_exec_time": 42.12824,
+        "rows": 0
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score - OLD.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = OLD.post_id",
+        "toplevel": false,
+        "calls": 37266,
+        "total_exec_time": 1565375.5151809924,
+        "mean_exec_time": 42.00546114906342,
+        "rows": 37266
+      },
+      {
+        "query": "alter table local_user alter column default_sort_type type sort_type_enum using\n    case default_sort_type\n        when 0 then 'Active'\n        when 1 then 'Hot'\n        when 2 then 'New'\n        when 3 then 'Old'\n        when 4 then 'TopDay'\n        when 5 then 'TopWeek'\n        when 6 then 'TopMonth'\n        when 7 then 'TopYear'\n        when 8 then 'TopAll'\n        when 9 then 'MostComments'\n        when 10 then 'NewComments'\n        else 'Active'\n    end :: sort_type_enum",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 41.214923,
+        "mean_exec_time": 41.214923,
+        "rows": 0
+      },
+      {
+        "query": "alter table user_ alter column avatar type text",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 39.448869,
+        "mean_exec_time": 39.448869,
+        "rows": 0
+      },
+      {
+        "query": "alter table site\n    add column actor_id varchar(255) not null unique default generate_unique_changeme(),\n    add column last_refreshed_at Timestamp not null default now(),\n    add column inbox_url varchar(255) not null default generate_unique_changeme(),\n    add column private_key text,\n    add column public_key text not null default generate_unique_changeme()",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 39.379067,
+        "mean_exec_time": 39.379067,
+        "rows": 0
+      },
+      {
+        "query": "INSERT INTO \"community_language\" (\"community_id\", \"language_id\") VALUES ($1, $2), ($3, $4), ($5, $6), ($7, $8), ($9, $10), ($11, $12), ($13, $14), ($15, $16), ($17, $18), ($19, $20), ($21, $22), ($23, $24), ($25, $26), ($27, $28), ($29, $30), ($31, $32), ($33, $34), ($35, $36), ($37, $38), ($39, $40), ($41, $42), ($43, $44), ($45, $46), ($47, $48), ($49, $50), ($51, $52), ($53, $54), ($55, $56), ($57, $58), ($59, $60), ($61, $62), ($63, $64), ($65, $66), ($67, $68), ($69, $70), ($71, $72), ($73, $74), ($75, $76), ($77, $78), ($79, $80), ($81, $82), ($83, $84), ($85, $86), ($87, $88), ($89, $90), ($91, $92), ($93, $94), ($95, $96), ($97, $98), ($99, $100), ($101, $102), ($103, $104), ($105, $106), ($107, $108), ($109, $110), ($111, $112), ($113, $114), ($115, $116), ($117, $118), ($119, $120), ($121, $122), ($123, $124), ($125, $126), ($127, $128), ($129, $130), ($131, $132), ($133, $134), ($135, $136), ($137, $138), ($139, $140), ($141, $142), ($143, $144), ($145, $146), ($147, $148), ($149, $150), ($151, $152), ($153, $154), ($155, $156), ($157, $158), ($159, $160), ($161, $162), ($163, $164), ($165, $166), ($167, $168), ($169, $170), ($171, $172), ($173, $174), ($175, $176), ($177, $178), ($179, $180), ($181, $182), ($183, $184), ($185, $186), ($187, $188), ($189, $190), ($191, $192), ($193, $194), ($195, $196), ($197, $198), ($199, $200), ($201, $202), ($203, $204), ($205, $206), ($207, $208), ($209, $210), ($211, $212), ($213, $214), ($215, $216), ($217, $218), ($219, $220), ($221, $222), ($223, $224), ($225, $226), ($227, $228), ($229, $230), ($231, $232), ($233, $234), ($235, $236), ($237, $238), ($239, $240), ($241, $242), ($243, $244), ($245, $246), ($247, $248), ($249, $250), ($251, $252), ($253, $254), ($255, $256), ($257, $258), ($259, $260), ($261, $262), ($263, $264), ($265, $266), ($267, $268), ($269, $270), ($271, $272), ($273, $274), ($275, $276), ($277, $278), ($279, $280), ($281, $282), ($283, $284), ($285, $286), ($287, $288), ($289, $290), ($291, $292), ($293, $294), ($295, $296), ($297, $298), ($299, $300), ($301, $302), ($303, $304), ($305, $306), ($307, $308), ($309, $310), ($311, $312), ($313, $314), ($315, $316), ($317, $318), ($319, $320), ($321, $322), ($323, $324), ($325, $326), ($327, $328), ($329, $330), ($331, $332), ($333, $334), ($335, $336), ($337, $338), ($339, $340), ($341, $342), ($343, $344), ($345, $346), ($347, $348), ($349, $350), ($351, $352), ($353, $354), ($355, $356), ($357, $358), ($359, $360), ($361, $362), ($363, $364), ($365, $366), ($367, $368) RETURNING \"community_language\".\"id\", \"community_language\".\"community_id\", \"community_language\".\"language_id\"",
+        "toplevel": true,
+        "calls": 2900,
+        "total_exec_time": 114084.04278500014,
+        "mean_exec_time": 39.3393250982758,
+        "rows": 533600
+      },
+      {
+        "query": "create table custom_emoji (\n  id serial primary key,\n  local_site_id int references local_site on update cascade on delete cascade not null,\n  shortcode varchar(128) not null UNIQUE,\n  image_url text not null UNIQUE,\n  alt_text text not null,\n  category text not null,\n  published timestamp without time zone default now() not null,\n  updated timestamp without time zone\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 38.954151,
+        "mean_exec_time": 38.954151,
+        "rows": 0
+      },
+      {
+        "query": "-- create a new table local_user\ncreate table local_user (\n  id serial primary key,\n  person_id int references person on update cascade on delete cascade not null,\n  password_encrypted text not null,\n  email text unique,\n  admin boolean default false not null,\n  show_nsfw boolean default false not null,\n  theme character varying(20) default 'darkly'::character varying not null,\n  default_sort_type smallint default 0 not null,\n  default_listing_type smallint default 1 not null,\n  lang character varying(20) default 'browser'::character varying not null,\n  show_avatars boolean default true not null,\n  send_notifications_to_email boolean default false not null,\n  matrix_user_id text,\n  unique (person_id)\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 37.695998,
+        "mean_exec_time": 37.695998,
+        "rows": 0
+      },
+      {
+        "query": "CREATE DATABASE \"lemmy\"",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 35.972989,
+        "mean_exec_time": 35.972989,
+        "rows": 0
+      },
+      {
+        "query": "create table comment_report (\n  id            serial    primary key,\n  creator_id    int       references user_ on update cascade on delete cascade not null,   -- user reporting comment\n  comment_id    int       references comment on update cascade on delete cascade not null, -- comment being reported\n  original_comment_text  text      not null,\n  reason        text      not null,\n  resolved      bool      not null default false,\n  resolver_id   int       references user_ on update cascade on delete cascade,   -- user resolving report\n  published     timestamp not null default now(),\n  updated       timestamp null,\n  unique(comment_id, creator_id) -- users should only be able to report a comment once\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 33.429561,
+        "mean_exec_time": 33.429561,
+        "rows": 0
+      },
+      {
+        "query": "alter table local_site alter column default_post_listing_type type listing_type_enum using default_post_listing_type::listing_type_enum",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 32.834482,
+        "mean_exec_time": 32.834482,
+        "rows": 0
+      },
+      {
+        "query": "create table captcha_answer (\n    id serial primary key,\n    uuid uuid not null unique default gen_random_uuid(),\n    answer text not null,\n    published timestamp not null default now()\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 31.750147,
+        "mean_exec_time": 31.750147,
+        "rows": 0
+      },
+      {
+        "query": "create table password_reset_request (\n  id serial primary key,\n  user_id int references user_ on update cascade on delete cascade not null,\n  token_encrypted text not null,\n  published timestamp not null default now()\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 30.924715,
+        "mean_exec_time": 30.924715,
+        "rows": 0
+      },
+      {
+        "query": "-- Move all the extra site settings-type columns to a local_site table\n-- Add a lot of other fields currently in the lemmy.hjson\ncreate table local_site (\n  id serial primary key,\n  site_id int references site on update cascade on delete cascade not null unique,\n\n  -- Site table fields\n  site_setup boolean default false not null,\n  enable_downvotes boolean default true not null,\n  open_registration boolean default true not null,\n  enable_nsfw boolean default true not null,\n  community_creation_admin_only boolean default false not null,\n  require_email_verification boolean default false not null,\n  require_application boolean default true not null,\n  application_question text default 'to verify that you are human, please explain why you want to create an account on this site'::text,\n  private_instance boolean default false not null,\n  default_theme text default 'browser'::text not null,\n  default_post_listing_type text default 'Local'::text not null,\n  legal_information text,\n  hide_modlog_mod_names boolean default true not null,\n  application_email_admins boolean default false not null,\n\n  -- Fields from lemmy.hjson\n  slur_filter_regex text,\n  actor_name_max_length int default 20 not null,\n  federation_enabled boolean default true not null,\n  federation_debug boolean default false not null,\n  federation_strict_allowlist boolean default true not null,\n  federation_http_fetch_retry_limit int default 25 not null,\n  federation_worker_count int default 64 not null,\n  captcha_enabled boolean default false not null,\n  captcha_difficulty varchar(255) default 'medium' not null,\n\n  -- Time fields\n  published timestamp without time zone default now() not null,\n  updated timestamp without time zone\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 30.365051,
+        "mean_exec_time": 30.365051,
+        "rows": 0
+      },
+      {
+        "query": "create table private_message_report (\n  id            serial    primary key,\n  creator_id    int       references person on update cascade on delete cascade not null,   -- user reporting comment\n  private_message_id    int       references private_message on update cascade on delete cascade not null, -- comment being reported\n  original_pm_text  text      not null,\n  reason        text      not null,\n  resolved      bool      not null default false,\n  resolver_id   int       references person on update cascade on delete cascade,   -- user resolving report\n  published     timestamp not null default now(),\n  updated       timestamp null,\n  unique(private_message_id, creator_id) -- users should only be able to report a pm once\n)",
+        "toplevel": true,
+        "calls": 1,
+        "total_exec_time": 29.955076,
+        "mean_exec_time": 29.955076,
+        "rows": 0
+      }
+    ],
+    "top_queries_by_total_time": [
+      {
+        "query": "INSERT INTO \"post_like\" (\"post_id\", \"person_id\", \"score\") VALUES ($1, $2, $3) ON CONFLICT (\"post_id\", \"person_id\") DO UPDATE SET \"post_id\" = $4, \"person_id\" = $5, \"score\" = $6 RETURNING \"post_like\".\"id\", \"post_like\".\"post_id\", \"post_like\".\"person_id\", \"post_like\".\"score\", \"post_like\".\"published\"",
+        "toplevel": true,
+        "calls": 82164,
+        "total_exec_time": 2292102.512251044,
+        "mean_exec_time": 27.896676308979547,
+        "rows": 82164
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score + NEW.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = NEW.post_id",
+        "toplevel": false,
+        "calls": 79295,
+        "total_exec_time": 1861870.493271996,
+        "mean_exec_time": 23.48030132129398,
+        "rows": 79295
+      },
+      {
+        "query": "DELETE  FROM \"post_like\" WHERE ((\"post_like\".\"post_id\" = $1) AND (\"post_like\".\"person_id\" = $2))",
+        "toplevel": true,
+        "calls": 78021,
+        "total_exec_time": 1786303.902115001,
+        "mean_exec_time": 22.895167994706767,
+        "rows": 37266
+      },
+      {
+        "query": "update person_aggregates ua\n    set post_score = post_score - OLD.score\n    from post p\n    where ua.person_id = p.creator_id and p.id = OLD.post_id",
+        "toplevel": false,
+        "calls": 37266,
+        "total_exec_time": 1565375.5151809924,
+        "mean_exec_time": 42.00546114906342,
+        "rows": 37266
+      },
+      {
+        "query": "INSERT INTO \"community_language\" (\"community_id\", \"language_id\") VALUES ($1, $2), ($3, $4), ($5, $6), ($7, $8), ($9, $10), ($11, $12), ($13, $14), ($15, $16), ($17, $18), ($19, $20), ($21, $22), ($23, $24), ($25, $26), ($27, $28), ($29, $30), ($31, $32), ($33, $34), ($35, $36), ($37, $38), ($39, $40), ($41, $42), ($43, $44), ($45, $46), ($47, $48), ($49, $50), ($51, $52), ($53, $54), ($55, $56), ($57, $58), ($59, $60), ($61, $62), ($63, $64), ($65, $66), ($67, $68), ($69, $70), ($71, $72), ($73, $74), ($75, $76), ($77, $78), ($79, $80), ($81, $82), ($83, $84), ($85, $86), ($87, $88), ($89, $90), ($91, $92), ($93, $94), ($95, $96), ($97, $98), ($99, $100), ($101, $102), ($103, $104), ($105, $106), ($107, $108), ($109, $110), ($111, $112), ($113, $114), ($115, $116), ($117, $118), ($119, $120), ($121, $122), ($123, $124), ($125, $126), ($127, $128), ($129, $130), ($131, $132), ($133, $134), ($135, $136), ($137, $138), ($139, $140), ($141, $142), ($143, $144), ($145, $146), ($147, $148), ($149, $150), ($151, $152), ($153, $154), ($155, $156), ($157, $158), ($159, $160), ($161, $162), ($163, $164), ($165, $166), ($167, $168), ($169, $170), ($171, $172), ($173, $174), ($175, $176), ($177, $178), ($179, $180), ($181, $182), ($183, $184), ($185, $186), ($187, $188), ($189, $190), ($191, $192), ($193, $194), ($195, $196), ($197, $198), ($199, $200), ($201, $202), ($203, $204), ($205, $206), ($207, $208), ($209, $210), ($211, $212), ($213, $214), ($215, $216), ($217, $218), ($219, $220), ($221, $222), ($223, $224), ($225, $226), ($227, $228), ($229, $230), ($231, $232), ($233, $234), ($235, $236), ($237, $238), ($239, $240), ($241, $242), ($243, $244), ($245, $246), ($247, $248), ($249, $250), ($251, $252), ($253, $254), ($255, $256), ($257, $258), ($259, $260), ($261, $262), ($263, $264), ($265, $266), ($267, $268), ($269, $270), ($271, $272), ($273, $274), ($275, $276), ($277, $278), ($279, $280), ($281, $282), ($283, $284), ($285, $286), ($287, $288), ($289, $290), ($291, $292), ($293, $294), ($295, $296), ($297, $298), ($299, $300), ($301, $302), ($303, $304), ($305, $306), ($307, $308), ($309, $310), ($311, $312), ($313, $314), ($315, $316), ($317, $318), ($319, $320), ($321, $322), ($323, $324), ($325, $326), ($327, $328), ($329, $330), ($331, $332), ($333, $334), ($335, $336), ($337, $338), ($339, $340), ($341, $342), ($343, $344), ($345, $346), ($347, $348), ($349, $350), ($351, $352), ($353, $354), ($355, $356), ($357, $358), ($359, $360), ($361, $362), ($363, $364), ($365, $366), ($367, $368) RETURNING \"community_language\".\"id\", \"community_language\".\"community_id\", \"community_language\".\"language_id\"",
+        "toplevel": true,
+        "calls": 2900,
+        "total_exec_time": 114084.04278500014,
+        "mean_exec_time": 39.3393250982758,
+        "rows": 533600
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"language\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 550955,
+        "total_exec_time": 60637.51301899996,
+        "mean_exec_time": 0.1100589213620044,
+        "rows": 550955
+      },
+      {
+        "query": "INSERT INTO \"comment\" (\"creator_id\", \"post_id\", \"content\", \"removed\", \"published\", \"updated\", \"deleted\", \"ap_id\", \"local\", \"distinguished\", \"language_id\") VALUES ($1, $2, $3, DEFAULT, $4, DEFAULT, $5, $6, $7, DEFAULT, DEFAULT) ON CONFLICT (\"ap_id\") DO UPDATE SET \"creator_id\" = $8, \"post_id\" = $9, \"content\" = $10, \"published\" = $11, \"deleted\" = $12, \"ap_id\" = $13, \"local\" = $14 RETURNING \"comment\".\"id\", \"comment\".\"creator_id\", \"comment\".\"post_id\", \"comment\".\"content\", \"comment\".\"removed\", \"comment\".\"published\", \"comment\".\"updated\", \"comment\".\"deleted\", \"comment\".\"ap_id\", \"comment\".\"local\", \"comment\".\"path\", \"comment\".\"distinguished\", \"comment\".\"language_id\"",
+        "toplevel": true,
+        "calls": 13028,
+        "total_exec_time": 26518.06455400003,
+        "mean_exec_time": 2.0354670366902177,
+        "rows": 13028
+      },
+      {
+        "query": "update post_aggregates pa\n    set score = score + NEW.score,\n    upvotes = case when NEW.score = $16 then upvotes + $17 else upvotes end,\n    downvotes = case when NEW.score = $18 then downvotes + $19 else downvotes end\n    where pa.post_id = NEW.post_id",
+        "toplevel": false,
+        "calls": 79295,
+        "total_exec_time": 26293.729700000185,
+        "mean_exec_time": 0.3315937915379247,
+        "rows": 79295
+      },
+      {
+        "query": "update post_aggregates pa\n    set score = score - OLD.score,\n    upvotes = case when OLD.score = $18 then upvotes - $19 else upvotes end,\n    downvotes = case when OLD.score = $20 then downvotes - $21 else downvotes end\n    from post p\n    where pa.post_id = p.id\n    and pa.post_id = OLD.post_id",
+        "toplevel": false,
+        "calls": 37266,
+        "total_exec_time": 18786.949605999856,
+        "mean_exec_time": 0.5041311008962592,
+        "rows": 37266
+      },
+      {
+        "query": "INSERT INTO \"comment_like\" (\"person_id\", \"comment_id\", \"post_id\", \"score\") VALUES ($1, $2, $3, $4) ON CONFLICT (\"comment_id\", \"person_id\") DO UPDATE SET \"person_id\" = $5, \"comment_id\" = $6, \"post_id\" = $7, \"score\" = $8 RETURNING \"comment_like\".\"id\", \"comment_like\".\"person_id\", \"comment_like\".\"comment_id\", \"comment_like\".\"post_id\", \"comment_like\".\"score\", \"comment_like\".\"published\"",
+        "toplevel": true,
+        "calls": 17792,
+        "total_exec_time": 15341.971641999951,
+        "mean_exec_time": 0.8622960680080933,
+        "rows": 17792
+      },
+      {
+        "query": "SELECT \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\" FROM \"post\" WHERE (\"post\".\"ap_id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 339002,
+        "total_exec_time": 13923.131414999782,
+        "mean_exec_time": 0.04107094180860217,
+        "rows": 286959
+      },
+      {
+        "query": "SELECT $2 FROM ONLY \"public\".\"community\" x WHERE \"id\" OPERATOR(pg_catalog.=) $1 FOR KEY SHARE OF x",
+        "toplevel": false,
+        "calls": 540643,
+        "total_exec_time": 12248.688904999652,
+        "mean_exec_time": 0.022655780071137464,
+        "rows": 540643
+      },
+      {
+        "query": "SELECT \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\" FROM \"person\" WHERE ((\"person\".\"deleted\" = $1) AND (\"person\".\"actor_id\" = $2)) LIMIT $3",
+        "toplevel": true,
+        "calls": 330120,
+        "total_exec_time": 11624.923160000188,
+        "mean_exec_time": 0.03521423470253186,
+        "rows": 320364
+      },
+      {
+        "query": "SELECT \"community\".\"id\", \"community\".\"name\", \"community\".\"title\", \"community\".\"description\", \"community\".\"removed\", \"community\".\"published\", \"community\".\"updated\", \"community\".\"deleted\", \"community\".\"nsfw\", \"community\".\"actor_id\", \"community\".\"local\", \"community\".\"private_key\", \"community\".\"public_key\", \"community\".\"last_refreshed_at\", \"community\".\"icon\", \"community\".\"banner\", \"community\".\"followers_url\", \"community\".\"inbox_url\", \"community\".\"shared_inbox_url\", \"community\".\"hidden\", \"community\".\"posting_restricted_to_mods\", \"community\".\"instance_id\", \"community\".\"moderators_url\", \"community\".\"featured_url\" FROM \"community\" WHERE (\"community\".\"id\" = $1) LIMIT $2",
+        "toplevel": true,
+        "calls": 204654,
+        "total_exec_time": 8081.130490000044,
+        "mean_exec_time": 0.0394867947364821,
+        "rows": 204654
+      },
+      {
+        "query": "SELECT \"local_site\".\"id\", \"local_site\".\"site_id\", \"local_site\".\"site_setup\", \"local_site\".\"enable_downvotes\", \"local_site\".\"enable_nsfw\", \"local_site\".\"community_creation_admin_only\", \"local_site\".\"require_email_verification\", \"local_site\".\"application_question\", \"local_site\".\"private_instance\", \"local_site\".\"default_theme\", \"local_site\".\"default_post_listing_type\", \"local_site\".\"legal_information\", \"local_site\".\"hide_modlog_mod_names\", \"local_site\".\"application_email_admins\", \"local_site\".\"slur_filter_regex\", \"local_site\".\"actor_name_max_length\", \"local_site\".\"federation_enabled\", \"local_site\".\"captcha_enabled\", \"local_site\".\"captcha_difficulty\", \"local_site\".\"published\", \"local_site\".\"updated\", \"local_site\".\"registration_mode\", \"local_site\".\"reports_email_admins\" FROM \"local_site\" LIMIT $1",
+        "toplevel": true,
+        "calls": 258067,
+        "total_exec_time": 7649.724102000062,
+        "mean_exec_time": 0.029642395587192255,
+        "rows": 258066
+      },
+      {
+        "query": "INSERT INTO \"activity\" (\"data\", \"local\", \"updated\", \"ap_id\", \"sensitive\") VALUES ($1, $2, DEFAULT, $3, $4) RETURNING \"activity\".\"id\", \"activity\".\"data\", \"activity\".\"local\", \"activity\".\"published\", \"activity\".\"updated\", \"activity\".\"ap_id\", \"activity\".\"sensitive\"",
+        "toplevel": true,
+        "calls": 99959,
+        "total_exec_time": 7181.561217999884,
+        "mean_exec_time": 0.07184506865814987,
+        "rows": 99959
+      },
+      {
+        "query": "INSERT INTO \"post\" (\"name\", \"creator_id\", \"community_id\", \"nsfw\", \"url\", \"body\", \"removed\", \"locked\", \"updated\", \"published\", \"deleted\", \"embed_title\", \"embed_description\", \"embed_video_url\", \"thumbnail_url\", \"ap_id\", \"local\", \"language_id\", \"featured_community\", \"featured_local\") VALUES ($1, $2, $3, $4, DEFAULT, $5, DEFAULT, $6, DEFAULT, $7, $8, DEFAULT, DEFAULT, DEFAULT, DEFAULT, $9, $10, DEFAULT, DEFAULT, DEFAULT) ON CONFLICT (\"ap_id\") DO UPDATE SET \"name\" = $11, \"creator_id\" = $12, \"community_id\" = $13, \"nsfw\" = $14, \"body\" = $15, \"locked\" = $16, \"published\" = $17, \"deleted\" = $18, \"ap_id\" = $19, \"local\" = $20 RETURNING \"post\".\"id\", \"post\".\"name\", \"post\".\"url\", \"post\".\"body\", \"post\".\"creator_id\", \"post\".\"community_id\", \"post\".\"removed\", \"post\".\"locked\", \"post\".\"published\", \"post\".\"updated\", \"post\".\"deleted\", \"post\".\"nsfw\", \"post\".\"embed_title\", \"post\".\"embed_description\", \"post\".\"thumbnail_url\", \"post\".\"ap_id\", \"post\".\"local\", \"post\".\"embed_video_url\", \"post\".\"language_id\", \"post\".\"featured_community\", \"post\".\"featured_local\"",
+        "toplevel": true,
+        "calls": 4143,
+        "total_exec_time": 6801.797975000016,
+        "mean_exec_time": 1.6417566920106217,
+        "rows": 4143
+      },
+      {
+        "query": "INSERT INTO \"person\" (\"name\", \"public_key\", \"instance_id\", \"display_name\", \"avatar\", \"banned\", \"published\", \"updated\", \"actor_id\", \"bio\", \"local\", \"private_key\", \"last_refreshed_at\", \"banner\", \"deleted\", \"inbox_url\", \"shared_inbox_url\", \"matrix_user_id\", \"admin\", \"bot_account\", \"ban_expires\") VALUES ($1, $2, $3, $4, DEFAULT, DEFAULT, DEFAULT, DEFAULT, $5, DEFAULT, $6, DEFAULT, $7, DEFAULT, $8, $9, DEFAULT, DEFAULT, $10, $11, DEFAULT) ON CONFLICT (\"actor_id\") DO UPDATE SET \"name\" = $12, \"public_key\" = $13, \"instance_id\" = $14, \"display_name\" = $15, \"actor_id\" = $16, \"local\" = $17, \"last_refreshed_at\" = $18, \"deleted\" = $19, \"inbox_url\" = $20, \"admin\" = $21, \"bot_account\" = $22 RETURNING \"person\".\"id\", \"person\".\"name\", \"person\".\"display_name\", \"person\".\"avatar\", \"person\".\"banned\", \"person\".\"published\", \"person\".\"updated\", \"person\".\"actor_id\", \"person\".\"bio\", \"person\".\"local\", \"person\".\"private_key\", \"person\".\"public_key\", \"person\".\"last_refreshed_at\", \"person\".\"banner\", \"person\".\"deleted\", \"person\".\"inbox_url\", \"person\".\"shared_inbox_url\", \"person\".\"matrix_user_id\", \"person\".\"admin\", \"person\".\"bot_account\", \"person\".\"ban_expires\", \"person\".\"instance_id\"",
+        "toplevel": true,
+        "calls": 9756,
+        "total_exec_time": 5639.297750999988,
+        "mean_exec_time": 0.5780337998154976,
+        "rows": 9756
+      },
+      {
+        "query": "SELECT \"instance\".\"id\", \"instance\".\"domain\", \"instance\".\"published\", \"instance\".\"updated\", \"instance\".\"software\", \"instance\".\"version\" FROM (\"instance\" INNER JOIN \"federation_allowlist\" ON (\"federation_allowlist\".\"instance_id\" = \"instance\".\"id\"))",
+        "toplevel": true,
+        "calls": 158107,
+        "total_exec_time": 5094.902793999982,
+        "mean_exec_time": 0.03222439736381035,
+        "rows": 0
+      },
+      {
+        "query": "SELECT $1",
+        "toplevel": true,
+        "calls": 2090943,
+        "total_exec_time": 4820.2477610000415,
+        "mean_exec_time": 0.0023052984997676885,
+        "rows": 2090943
+      }
+    ]
+  },
+  "config": {
+    "local_server": "http://reddit.com.localhost:5313/",
+    "remote_server": "http://lemmy.localhost:8536/inbox",
+    "input_file": "crates/integration_testing/dump.jsonl.zst",
+    "federation_workers": 100,
+    "output_json": "runs/2023-07-04T00:51:47+00:00-pool-with-alive-check/info.json",
+    "runname": "pool-with-alive-check"
+  }
+}
